@@ -10,6 +10,11 @@ project(pico_playground C CXX)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 
+
+# set pins
+set(PICO_AUDIO_I2S_DATA_PIN 28)
+set(PICO_AUDIO_I2S_CLOCK_PIN_BASE 26)
+
 # Initialize the Pico SDK
 pico_sdk_init()
 
