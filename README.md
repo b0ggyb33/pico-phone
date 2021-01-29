@@ -17,6 +17,19 @@ make a landline play mp3 with raspberry pi pico
 * changed i2s data pin to 26
 * changed i2s clock pin to 28
 
+## Physical connections
+
+Pin 26 on pico to BCLK on amp
+Pin 27 on pico to LRCCLK on amp
+Pin 28 on pico to DIN on amp
+
+pin 30 on pico to vin on amp
+pin XX on pico to gnd on amp
+
+amp SD to ground to disable
+
+amp mono out to phone handset
+
 ## Development Log
 
 * 2020-01-29 Played sine wave to a phone speaker
