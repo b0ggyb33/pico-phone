@@ -19,12 +19,12 @@ make a landline play mp3 with raspberry pi pico
 
 ## Physical connections
 
-Pin 26 on pico to BCLK on amp
-Pin 27 on pico to LRCCLK on amp
-Pin 28 on pico to DIN on amp
+* Pin GPIO 26 on pico to BCLK on amp
+* Pin GPIO 27 on pico to LRCCLK on amp
+* Pin GPIO 28 on pico to DIN on amp
 
-pin 30 on pico to vin on amp
-pin XX on pico to gnd on amp
+* pin 36 on pico to vin on amp
+* pin 23 on pico to gnd on amp
 
 amp SD to ground to disable
 
