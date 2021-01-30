@@ -32,6 +32,7 @@ amp mono out to phone handset
 
 ## Development Log
 
+* 2020-01-30 Made lorem ipsum mp3 using [voice maker](https://voicemaker.in/natural)
 * 2020-01-29 Played sine wave to a phone speaker
 * 2020-01-27 Compiled audio example from [pico-playground](https://github.com/raspberrypi/pico-playground/tree/master/audio)
 
