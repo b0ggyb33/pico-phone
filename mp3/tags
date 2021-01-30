@@ -1,0 +1,928 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/a3c87ab5/
+AACDecInfo_t	src/aac_decoder/aac_decoder.h	/^} AACDecInfo_t;$/;"	t	typeref:struct:_AACDecInfo_t
+AACDecode	src/aac_decoder/aac_decoder.cpp	/^int AACDecode(uint8_t *inbuf, int *bytesLeft, short *outbuf)$/;"	f	typeref:typename:int
+AACDecoder_AllocateBuffers	src/aac_decoder/aac_decoder.cpp	/^bool AACDecoder_AllocateBuffers(void){$/;"	f	typeref:typename:bool
+AACDecoder_FreeBuffers	src/aac_decoder/aac_decoder.cpp	/^void AACDecoder_FreeBuffers(void){$/;"	f	typeref:typename:void
+AACDequantize	src/aac_decoder/aac_decoder.cpp	/^int AACDequantize(int ch)$/;"	f	typeref:typename:int
+AACFindSyncWord	src/aac_decoder/aac_decoder.cpp	/^int AACFindSyncWord(uint8_t *buf, int nBytes)$/;"	f	typeref:typename:int
+AACFrameInfo_t	src/aac_decoder/aac_decoder.h	/^} AACFrameInfo_t;$/;"	t	typeref:struct:_AACFrameInfo_t
+AACGetBitrate	src/aac_decoder/aac_decoder.cpp	/^int AACGetBitrate() {return m_AACDecInfo->bitRate;}$/;"	f	typeref:typename:int
+AACGetBitsPerSample	src/aac_decoder/aac_decoder.cpp	/^int AACGetBitsPerSample(){return 16;}$/;"	f	typeref:typename:int
+AACGetChannels	src/aac_decoder/aac_decoder.cpp	/^int AACGetChannels(){return m_AACDecInfo->nChans;}$/;"	f	typeref:typename:int
+AACGetLastFrameInfo	src/aac_decoder/aac_decoder.cpp	/^void AACGetLastFrameInfo(AACFrameInfo_t *aacFrameInfo)$/;"	f	typeref:typename:void
+AACGetOutputSamps	src/aac_decoder/aac_decoder.cpp	/^int AACGetOutputSamps(){return m_AACDecInfo->nChans * AAC_MAX_NSAMPS;}$/;"	f	typeref:typename:int
+AACGetSampRate	src/aac_decoder/aac_decoder.cpp	/^int AACGetSampRate(){return m_AACDecInfo->sampRate;}$/;"	f	typeref:typename:int
+AAC_FF_ADIF	src/aac_decoder/aac_decoder.h	/^    AAC_FF_ADIF    = 2,$/;"	e	enum:__anon82e632d50103
+AAC_FF_ADTS	src/aac_decoder/aac_decoder.h	/^    AAC_FF_ADTS    = 1,$/;"	e	enum:__anon82e632d50103
+AAC_FF_RAW	src/aac_decoder/aac_decoder.h	/^    AAC_FF_RAW     =  3$/;"	e	enum:__anon82e632d50103
+AAC_FF_Unknown	src/aac_decoder/aac_decoder.h	/^    AAC_FF_Unknown = 0,        \/* should be 0 on init *\/$/;"	e	enum:__anon82e632d50103
+AAC_ID_CCE	src/aac_decoder/aac_decoder.h	/^    AAC_ID_CCE     =  2,$/;"	e	enum:__anon82e632d50203
+AAC_ID_CPE	src/aac_decoder/aac_decoder.h	/^    AAC_ID_CPE     =  1,$/;"	e	enum:__anon82e632d50203
+AAC_ID_DSE	src/aac_decoder/aac_decoder.h	/^    AAC_ID_DSE     =  4,$/;"	e	enum:__anon82e632d50203
+AAC_ID_END	src/aac_decoder/aac_decoder.h	/^    AAC_ID_END     =  7$/;"	e	enum:__anon82e632d50203
+AAC_ID_FIL	src/aac_decoder/aac_decoder.h	/^    AAC_ID_FIL     =  6,$/;"	e	enum:__anon82e632d50203
+AAC_ID_INVALID	src/aac_decoder/aac_decoder.h	/^    AAC_ID_INVALID = -1,$/;"	e	enum:__anon82e632d50203
+AAC_ID_LFE	src/aac_decoder/aac_decoder.h	/^    AAC_ID_LFE     =  3,$/;"	e	enum:__anon82e632d50203
+AAC_ID_PCE	src/aac_decoder/aac_decoder.h	/^    AAC_ID_PCE     =  5,$/;"	e	enum:__anon82e632d50203
+AAC_ID_SCE	src/aac_decoder/aac_decoder.h	/^    AAC_ID_SCE     =  0,$/;"	e	enum:__anon82e632d50203
+AAC_MAX_NCHANS	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  AAC_MAX_NCHANS      = 2;             \/* set to default max number of channels  */;"	v	typeref:typename:const uint8_t
+AAC_MAX_NSAMPS	src/aac_decoder/aac_decoder.cpp	/^const uint16_t AAC_MAX_NSAMPS      = 1024;$/;"	v	typeref:typename:const uint16_t
+AAC_PROFILE_LC	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  AAC_PROFILE_LC      = 1;$/;"	v	typeref:typename:const uint8_t
+ADIFHeader_t	src/aac_decoder/aac_decoder.h	/^} ADIFHeader_t;$/;"	t	typeref:struct:_ADIFHeader_t
+ADIF_COPYID_SIZE	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  ADIF_COPYID_SIZE    = 9;$/;"	v	typeref:typename:const uint8_t
+ADTSHeader_t	src/aac_decoder/aac_decoder.h	/^} ADTSHeader_t;$/;"	t	typeref:struct:_ADTSHeader_t
+APLL_AUTO	src/Audio.h	/^    enum : int { APLL_AUTO = -1, APLL_ENABLE = 1, APLL_DISABLE = 0 };$/;"	e	enum:Audio::__anonb0bba0c40103
+APLL_DISABLE	src/Audio.h	/^    enum : int { APLL_AUTO = -1, APLL_ENABLE = 1, APLL_DISABLE = 0 };$/;"	e	enum:Audio::__anonb0bba0c40103
+APLL_ENABLE	src/Audio.h	/^    enum : int { APLL_AUTO = -1, APLL_ENABLE = 1, APLL_DISABLE = 0 };$/;"	e	enum:Audio::__anonb0bba0c40103
+ARRAY3	src/mp3_decoder/mp3_decoder.cpp	/^    typedef int ARRAY3[3];  \/* for short-block reordering *\/$/;"	t	function:DequantChannel	typeref:typename:int[3]	file:
+ASSERT	src/aac_decoder/aac_decoder.h	/^#define ASSERT(/;"	d
+AUDIO_DATA	src/Audio.h	/^    enum : int { AUDIO_NONE, AUDIO_HEADER , AUDIO_DATA, AUDIO_METADATA, AUDIO_PLAYLISTINIT,$/;"	e	enum:Audio::__anonb0bba0c40503
+AUDIO_HEADER	src/Audio.h	/^    enum : int { AUDIO_NONE, AUDIO_HEADER , AUDIO_DATA, AUDIO_METADATA, AUDIO_PLAYLISTINIT,$/;"	e	enum:Audio::__anonb0bba0c40503
+AUDIO_H_	src/Audio.h	/^#define AUDIO_H_$/;"	d
+AUDIO_METADATA	src/Audio.h	/^    enum : int { AUDIO_NONE, AUDIO_HEADER , AUDIO_DATA, AUDIO_METADATA, AUDIO_PLAYLISTINIT,$/;"	e	enum:Audio::__anonb0bba0c40503
+AUDIO_NONE	src/Audio.h	/^    enum : int { AUDIO_NONE, AUDIO_HEADER , AUDIO_DATA, AUDIO_METADATA, AUDIO_PLAYLISTINIT,$/;"	e	enum:Audio::__anonb0bba0c40503
+AUDIO_PLAYLISTDATA	src/Audio.h	/^                 AUDIO_PLAYLISTHEADER,  AUDIO_PLAYLISTDATA, AUDIO_SWM };$/;"	e	enum:Audio::__anonb0bba0c40503
+AUDIO_PLAYLISTHEADER	src/Audio.h	/^                 AUDIO_PLAYLISTHEADER,  AUDIO_PLAYLISTDATA, AUDIO_SWM };$/;"	e	enum:Audio::__anonb0bba0c40503
+AUDIO_PLAYLISTINIT	src/Audio.h	/^    enum : int { AUDIO_NONE, AUDIO_HEADER , AUDIO_DATA, AUDIO_METADATA, AUDIO_PLAYLISTINIT,$/;"	e	enum:Audio::__anonb0bba0c40503
+AUDIO_SWM	src/Audio.h	/^                 AUDIO_PLAYLISTHEADER,  AUDIO_PLAYLISTDATA, AUDIO_SWM };$/;"	e	enum:Audio::__anonb0bba0c40503
+AdvanceBitstream	src/aac_decoder/aac_decoder.cpp	/^void AdvanceBitstream(int nBits)$/;"	f	typeref:typename:void
+AntiAlias	src/mp3_decoder/mp3_decoder.cpp	/^void AntiAlias(int *x, int nBfly){$/;"	f	typeref:typename:void
+Audio	src/Audio.cpp	/^Audio::Audio(const uint8_t BCLK, const uint8_t LRC, const uint8_t DOUT) {$/;"	f	class:Audio
+Audio	src/Audio.h	/^class Audio : private AudioBuffer{$/;"	c
+AudioBuffer	src/Audio.cpp	/^AudioBuffer::AudioBuffer() {$/;"	f	class:AudioBuffer
+AudioBuffer	src/Audio.h	/^class AudioBuffer {$/;"	c
+BitReverse	src/aac_decoder/aac_decoder.cpp	/^void BitReverse(int *inout, int tabidx)$/;"	f	typeref:typename:void
+BitReverse32	src/aac_decoder/aac_decoder.cpp	/^void BitReverse32(int *inout)$/;"	f	typeref:typename:void
+BitStreamInfo	src/mp3_decoder/mp3_decoder.h	/^typedef struct BitStreamInfo {$/;"	s
+BitStreamInfo_t	src/mp3_decoder/mp3_decoder.h	/^} BitStreamInfo_t;$/;"	t	typeref:struct:BitStreamInfo
+BlockCount	src/mp3_decoder/mp3_decoder.h	/^typedef struct BlockCount {$/;"	s
+BlockCount_t	src/mp3_decoder/mp3_decoder.h	/^} BlockCount_t;$/;"	t	typeref:struct:BlockCount
+ByteAlignBitstream	src/aac_decoder/aac_decoder.cpp	/^void ByteAlignBitstream()$/;"	f	typeref:typename:void
+CLIPTOSHORT	src/aac_decoder/aac_decoder.cpp	/^inline short CLIPTOSHORT(int x){$/;"	f	typeref:typename:short
+CLZ	src/aac_decoder/aac_decoder.cpp	/^inline int CLZ(int x){int numZeros;$/;"	f	typeref:typename:int
+CLZ	src/mp3_decoder/mp3_decoder.h	/^inline int CLZ(int x){int numZeros; if (!x) return(sizeof(int) * 8);  numZeros = 0; while (!(x &/;"	f	typeref:typename:int
+CODEC_AAC	src/Audio.h	/^    enum : int { CODEC_NONE = 0, CODEC_WAV = 1, CODEC_MP3 = 2, CODEC_AAC = 4, CODEC_FLAC = 5};$/;"	e	enum:Audio::__anonb0bba0c40303
+CODEC_FLAC	src/Audio.h	/^    enum : int { CODEC_NONE = 0, CODEC_WAV = 1, CODEC_MP3 = 2, CODEC_AAC = 4, CODEC_FLAC = 5};$/;"	e	enum:Audio::__anonb0bba0c40303
+CODEC_MP3	src/Audio.h	/^    enum : int { CODEC_NONE = 0, CODEC_WAV = 1, CODEC_MP3 = 2, CODEC_AAC = 4, CODEC_FLAC = 5};$/;"	e	enum:Audio::__anonb0bba0c40303
+CODEC_NONE	src/Audio.h	/^    enum : int { CODEC_NONE = 0, CODEC_WAV = 1, CODEC_MP3 = 2, CODEC_AAC = 4, CODEC_FLAC = 5};$/;"	e	enum:Audio::__anonb0bba0c40303
+CODEC_WAV	src/Audio.h	/^    enum : int { CODEC_NONE = 0, CODEC_WAV = 1, CODEC_MP3 = 2, CODEC_AAC = 4, CODEC_FLAC = 5};$/;"	e	enum:Audio::__anonb0bba0c40303
+CRCWord	src/mp3_decoder/mp3_decoder.h	/^    int CRCWord;            \/* CRC word (16 bits, 0 if crc not enabled) *\/$/;"	m	struct:FrameHeader	typeref:typename:int
+CVKernel1	src/aac_decoder/aac_decoder.cpp	/^void CVKernel1(int *XBuf, int *accBuf)$/;"	f	typeref:typename:void
+CVKernel2	src/aac_decoder/aac_decoder.cpp	/^void CVKernel2(int *XBuf, int *accBuf)$/;"	f	typeref:typename:void
+CalcBitsUsed	src/aac_decoder/aac_decoder.cpp	/^int CalcBitsUsed(uint8_t *startBuf, int startOffset)$/;"	f	typeref:typename:int
+CalcBitsUsed	src/mp3_decoder/mp3_decoder.cpp	/^int CalcBitsUsed(BitStreamInfo_t *bsi, unsigned char *startBuf, int startOffset){$/;"	f	typeref:typename:int
+CheckPadBit	src/mp3_decoder/mp3_decoder.cpp	/^int CheckPadBit(){$/;"	f	typeref:typename:int
+ClipToShort	src/mp3_decoder/mp3_decoder.cpp	/^short ClipToShort(int x, int fracBits){$/;"	f	typeref:typename:short
+CopyNoiseVector	src/aac_decoder/aac_decoder.cpp	/^void CopyNoiseVector(int *coefL, int *coefR, int nVals)$/;"	f	typeref:typename:void
+CriticalBandInfo_t	src/mp3_decoder/mp3_decoder.h	/^} CriticalBandInfo_t;$/;"	t	typeref:struct:__anonbeff386b0408
+DCT4	src/aac_decoder/aac_decoder.cpp	/^void DCT4(int tabidx, int *coef, int gb)$/;"	f	typeref:typename:void
+DecWindowOverlap	src/aac_decoder/aac_decoder.cpp	/^void DecWindowOverlap(int *buf0, int *over0, short *pcm0, int nChans, int winTypeCurr, int winTy/;"	f	typeref:typename:void
+DecWindowOverlapLongStart	src/aac_decoder/aac_decoder.cpp	/^void DecWindowOverlapLongStart(int *buf0, int *over0, short *pcm0, int nChans, int winTypeCurr, /;"	f	typeref:typename:void
+DecWindowOverlapLongStop	src/aac_decoder/aac_decoder.cpp	/^void DecWindowOverlapLongStop(int *buf0, int *over0, short *pcm0, int nChans, int winTypeCurr, i/;"	f	typeref:typename:void
+DecWindowOverlapShort	src/aac_decoder/aac_decoder.cpp	/^void DecWindowOverlapShort(int *buf0, int *over0, short *pcm0, int nChans, int winTypeCurr, int /;"	f	typeref:typename:void
+DecodeChannelPairElement	src/aac_decoder/aac_decoder.cpp	/^int DecodeChannelPairElement()$/;"	f	typeref:typename:int
+DecodeDataStreamElement	src/aac_decoder/aac_decoder.cpp	/^int DecodeDataStreamElement()$/;"	f	typeref:typename:int
+DecodeFillElement	src/aac_decoder/aac_decoder.cpp	/^int DecodeFillElement()$/;"	f	typeref:typename:int
+DecodeGainControlInfo	src/aac_decoder/aac_decoder.cpp	/^void DecodeGainControlInfo(int winSequence, GainControlInfo_t *gi)$/;"	f	typeref:typename:void
+DecodeHuffman	src/mp3_decoder/mp3_decoder.cpp	/^int DecodeHuffman(unsigned char *buf, int *bitOffset, int huffBlockBits, int gr, int ch){$/;"	f	typeref:typename:int
+DecodeHuffmanPairs	src/mp3_decoder/mp3_decoder.cpp	/^int DecodeHuffmanPairs(int *xy, int nVals, int tabIdx, int bitsLeft, unsigned char *buf, int bit/;"	f	typeref:typename:int
+DecodeHuffmanQuads	src/mp3_decoder/mp3_decoder.cpp	/^int DecodeHuffmanQuads(int *vwxy, int nVals, int tabIdx, int bitsLeft, unsigned char *buf, int b/;"	f	typeref:typename:int
+DecodeHuffmanScalar	src/aac_decoder/aac_decoder.cpp	/^int DecodeHuffmanScalar(const signed short *huffTab, const HuffInfo_t *huffTabInfo, uint32_t bit/;"	f	typeref:typename:int
+DecodeICS	src/aac_decoder/aac_decoder.cpp	/^void DecodeICS(int ch)$/;"	f	typeref:typename:void
+DecodeICSInfo	src/aac_decoder/aac_decoder.cpp	/^void DecodeICSInfo(ICSInfo_t *icsInfo, int sampRateIdx)$/;"	f	typeref:typename:void
+DecodeLFEChannelElement	src/aac_decoder/aac_decoder.cpp	/^int DecodeLFEChannelElement()$/;"	f	typeref:typename:int
+DecodeLPCCoefs	src/aac_decoder/aac_decoder.cpp	/^void DecodeLPCCoefs(int order, int res, int8_t *filtCoef, int *a, int *b)$/;"	f	typeref:typename:void
+DecodeNextElement	src/aac_decoder/aac_decoder.cpp	/^int DecodeNextElement(uint8_t **buf, int *bitOffset, int *bitsAvail)$/;"	f	typeref:typename:int
+DecodeNoiselessData	src/aac_decoder/aac_decoder.cpp	/^int DecodeNoiselessData(uint8_t **buf, int *bitOffset, int *bitsAvail, int ch)$/;"	f	typeref:typename:int
+DecodeOneScaleFactor	src/aac_decoder/aac_decoder.cpp	/^int DecodeOneScaleFactor()$/;"	f	typeref:typename:int
+DecodeProgramConfigElement	src/aac_decoder/aac_decoder.cpp	/^int DecodeProgramConfigElement(uint8_t idx)$/;"	f	typeref:typename:int
+DecodePulseInfo	src/aac_decoder/aac_decoder.cpp	/^void DecodePulseInfo(uint8_t ch)$/;"	f	typeref:typename:void
+DecodeScaleFactors	src/aac_decoder/aac_decoder.cpp	/^void DecodeScaleFactors(int numWinGrp, int maxSFB, int globalGain,$/;"	f	typeref:typename:void
+DecodeSectionData	src/aac_decoder/aac_decoder.cpp	/^void DecodeSectionData(int winSequence, int numWinGrp, int maxSFB, uint8_t *sfbCodeBook)$/;"	f	typeref:typename:void
+DecodeSingleChannelElement	src/aac_decoder/aac_decoder.cpp	/^int DecodeSingleChannelElement()$/;"	f	typeref:typename:int
+DecodeSpectrumLong	src/aac_decoder/aac_decoder.cpp	/^void DecodeSpectrumLong(int ch)$/;"	f	typeref:typename:void
+DecodeSpectrumShort	src/aac_decoder/aac_decoder.cpp	/^void DecodeSpectrumShort(int ch)$/;"	f	typeref:typename:void
+DecodeTNSInfo	src/aac_decoder/aac_decoder.cpp	/^void DecodeTNSInfo(int winSequence, TNSInfo_t *ti, int8_t *tnsCoef)$/;"	f	typeref:typename:void
+DeinterleaveShortBlocks	src/aac_decoder/aac_decoder.cpp	/^int DeinterleaveShortBlocks(int ch)$/;"	f	typeref:typename:int
+DequantBlock	src/aac_decoder/aac_decoder.cpp	/^int DequantBlock(int *inbuf, int nSamps, int scale)$/;"	f	typeref:typename:int
+DequantBlock	src/mp3_decoder/mp3_decoder.cpp	/^int DequantBlock(int *inbuf, int *outbuf, int num, int scale){$/;"	f	typeref:typename:int
+DequantChannel	src/mp3_decoder/mp3_decoder.cpp	/^int DequantChannel(int *sampleBuf, int *workBuf, int *nonZeroBound,  SideInfoSub_t *sis, ScaleFa/;"	f	typeref:typename:int
+DequantInfo	src/mp3_decoder/mp3_decoder.h	/^typedef struct DequantInfo {$/;"	s
+DequantInfo_t	src/mp3_decoder/mp3_decoder.h	/^} DequantInfo_t;$/;"	t	typeref:struct:DequantInfo
+Dual	src/mp3_decoder/mp3_decoder.h	/^    Dual = 0x02,        \/* two independent channels, L and R always have exactly 1\/2 the total/;"	e	enum:__anonbeff386b0203
+ERR_AAC_CHANNEL_MAP	src/aac_decoder/aac_decoder.h	/^    ERR_AAC_CHANNEL_MAP                   =  -7,$/;"	e	enum:__anon82e632d50303
+ERR_AAC_DEQUANT	src/aac_decoder/aac_decoder.h	/^    ERR_AAC_DEQUANT                       =  -9,$/;"	e	enum:__anon82e632d50303
+ERR_AAC_IMDCT	src/aac_decoder/aac_decoder.h	/^    ERR_AAC_IMDCT                         = -14,$/;"	e	enum:__anon82e632d50303
+ERR_AAC_INDATA_UNDERFLOW	src/aac_decoder/aac_decoder.h	/^    ERR_AAC_INDATA_UNDERFLOW              =  -1,$/;"	e	enum:__anon82e632d50303
+ERR_AAC_INVALID_ADIF_HEADER	src/aac_decoder/aac_decoder.h	/^    ERR_AAC_INVALID_ADIF_HEADER           =  -4,$/;"	e	enum:__anon82e632d50303
+ERR_AAC_INVALID_ADTS_HEADER	src/aac_decoder/aac_decoder.h	/^    ERR_AAC_INVALID_ADTS_HEADER           =  -3,$/;"	e	enum:__anon82e632d50303
+ERR_AAC_INVALID_FRAME	src/aac_decoder/aac_decoder.h	/^    ERR_AAC_INVALID_FRAME                 =  -5,$/;"	e	enum:__anon82e632d50303
+ERR_AAC_MPEG4_UNSUPPORTED	src/aac_decoder/aac_decoder.h	/^    ERR_AAC_MPEG4_UNSUPPORTED             =  -6,$/;"	e	enum:__anon82e632d50303
+ERR_AAC_NCHANS_TOO_HIGH	src/aac_decoder/aac_decoder.h	/^    ERR_AAC_NCHANS_TOO_HIGH               = -15,$/;"	e	enum:__anon82e632d50303
+ERR_AAC_NONE	src/aac_decoder/aac_decoder.h	/^    ERR_AAC_NONE                          =   0,$/;"	e	enum:__anon82e632d50303
+ERR_AAC_NULL_POINTER	src/aac_decoder/aac_decoder.h	/^    ERR_AAC_NULL_POINTER                  =  -2,$/;"	e	enum:__anon82e632d50303
+ERR_AAC_PNS	src/aac_decoder/aac_decoder.h	/^    ERR_AAC_PNS                           = -11,$/;"	e	enum:__anon82e632d50303
+ERR_AAC_RAWBLOCK_PARAMS	src/aac_decoder/aac_decoder.h	/^    ERR_AAC_RAWBLOCK_PARAMS               = -22,$/;"	e	enum:__anon82e632d50303
+ERR_AAC_SHORT_BLOCK_DEINT	src/aac_decoder/aac_decoder.h	/^    ERR_AAC_SHORT_BLOCK_DEINT             = -12,$/;"	e	enum:__anon82e632d50303
+ERR_AAC_STEREO_PROCESS	src/aac_decoder/aac_decoder.h	/^    ERR_AAC_STEREO_PROCESS                = -10,$/;"	e	enum:__anon82e632d50303
+ERR_AAC_SYNTAX_ELEMENT	src/aac_decoder/aac_decoder.h	/^    ERR_AAC_SYNTAX_ELEMENT                =  -8,$/;"	e	enum:__anon82e632d50303
+ERR_AAC_TNS	src/aac_decoder/aac_decoder.h	/^    ERR_AAC_TNS                           = -13,$/;"	e	enum:__anon82e632d50303
+ERR_AAC_UNKNOWN	src/aac_decoder/aac_decoder.h	/^    ERR_AAC_UNKNOWN                        = -9999$/;"	e	enum:__anon82e632d50303
+ERR_MP3_FREE_BITRATE_SYNC	src/mp3_decoder/mp3_decoder.h	/^    ERR_MP3_FREE_BITRATE_SYNC =    -3,$/;"	e	enum:__anonbeff386b0103
+ERR_MP3_INDATA_UNDERFLOW	src/mp3_decoder/mp3_decoder.h	/^    ERR_MP3_INDATA_UNDERFLOW =     -1,$/;"	e	enum:__anonbeff386b0103
+ERR_MP3_INVALID_DEQUANTIZE	src/mp3_decoder/mp3_decoder.h	/^    ERR_MP3_INVALID_DEQUANTIZE =   -10,$/;"	e	enum:__anonbeff386b0103
+ERR_MP3_INVALID_FRAMEHEADER	src/mp3_decoder/mp3_decoder.h	/^    ERR_MP3_INVALID_FRAMEHEADER =  -6,$/;"	e	enum:__anonbeff386b0103
+ERR_MP3_INVALID_HUFFCODES	src/mp3_decoder/mp3_decoder.h	/^    ERR_MP3_INVALID_HUFFCODES =    -9,$/;"	e	enum:__anonbeff386b0103
+ERR_MP3_INVALID_IMDCT	src/mp3_decoder/mp3_decoder.h	/^    ERR_MP3_INVALID_IMDCT =        -11,$/;"	e	enum:__anonbeff386b0103
+ERR_MP3_INVALID_SCALEFACT	src/mp3_decoder/mp3_decoder.h	/^    ERR_MP3_INVALID_SCALEFACT =    -8,$/;"	e	enum:__anonbeff386b0103
+ERR_MP3_INVALID_SIDEINFO	src/mp3_decoder/mp3_decoder.h	/^    ERR_MP3_INVALID_SIDEINFO =     -7,$/;"	e	enum:__anonbeff386b0103
+ERR_MP3_INVALID_SUBBAND	src/mp3_decoder/mp3_decoder.h	/^    ERR_MP3_INVALID_SUBBAND =      -12,$/;"	e	enum:__anonbeff386b0103
+ERR_MP3_MAINDATA_UNDERFLOW	src/mp3_decoder/mp3_decoder.h	/^    ERR_MP3_MAINDATA_UNDERFLOW =   -2,$/;"	e	enum:__anonbeff386b0103
+ERR_MP3_NONE	src/mp3_decoder/mp3_decoder.h	/^    ERR_MP3_NONE =                  0,$/;"	e	enum:__anonbeff386b0103
+ERR_MP3_NULL_POINTER	src/mp3_decoder/mp3_decoder.h	/^    ERR_MP3_NULL_POINTER =         -5,$/;"	e	enum:__anonbeff386b0103
+ERR_MP3_OUT_OF_MEMORY	src/mp3_decoder/mp3_decoder.h	/^    ERR_MP3_OUT_OF_MEMORY =        -4,$/;"	e	enum:__anonbeff386b0103
+ERR_UNKNOWN	src/mp3_decoder/mp3_decoder.h	/^    ERR_UNKNOWN =                  -9999$/;"	e	enum:__anonbeff386b0103
+ESP32-audioI2S	README.md	/^# ESP32-audioI2S$/;"	c
+EXTERNAL_I2S	src/Audio.h	/^    enum : int { EXTERNAL_I2S = 0, INTERNAL_DAC = 1, INTERNAL_PDM = 2 };$/;"	e	enum:Audio::__anonb0bba0c40203
+FASTABS	src/aac_decoder/aac_decoder.cpp	/^inline int FASTABS(int x){$/;"	f	typeref:typename:int
+FASTABS	src/mp3_decoder/mp3_decoder.h	/^inline int FASTABS(int x){ int sign; sign=x>>(sizeof(int)*8-1); x^=sign; x-=sign; return x;}$/;"	f	typeref:typename:int
+FBITS_LOST_DCT4	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  FBITS_LOST_DCT4     = 1;             \/* number of fraction bits lost (>> out) in/;"	v	typeref:typename:const uint8_t
+FBITS_LPC_COEFS	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  FBITS_LPC_COEFS     = 20;$/;"	v	typeref:typename:const uint8_t
+FBITS_OUT_DQ_OFF	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  FBITS_OUT_DQ_OFF    = 20 - 15;       \/* (FBITS_OUT_DQ - SF_DQ_OFFSET) number of /;"	v	typeref:typename:const uint8_t
+FBITS_OUT_IMDCT	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  FBITS_OUT_IMDCT     = 3;$/;"	v	typeref:typename:const uint8_t
+FDCT32	src/mp3_decoder/mp3_decoder.cpp	/^void FDCT32(int *buf, int *dest, int offset, int oddBlock, int gb){$/;"	f	typeref:typename:void
+FFT32C	src/aac_decoder/aac_decoder.cpp	/^void FFT32C(int *x)$/;"	f	typeref:typename:void
+FF_LFN_UNICODE	src/Audio.h	/^#define FF_LFN_UNICODE /;"	d
+FORMAT_ASX	src/Audio.h	/^    enum : int { FORMAT_NONE = 0, FORMAT_M3U = 1, FORMAT_PLS = 2, FORMAT_ASX = 3};$/;"	e	enum:Audio::__anonb0bba0c40403
+FORMAT_M3U	src/Audio.h	/^    enum : int { FORMAT_NONE = 0, FORMAT_M3U = 1, FORMAT_PLS = 2, FORMAT_ASX = 3};$/;"	e	enum:Audio::__anonb0bba0c40403
+FORMAT_NONE	src/Audio.h	/^    enum : int { FORMAT_NONE = 0, FORMAT_M3U = 1, FORMAT_PLS = 2, FORMAT_ASX = 3};$/;"	e	enum:Audio::__anonb0bba0c40403
+FORMAT_PLS	src/Audio.h	/^    enum : int { FORMAT_NONE = 0, FORMAT_M3U = 1, FORMAT_PLS = 2, FORMAT_ASX = 3};$/;"	e	enum:Audio::__anonb0bba0c40403
+FilterRegion	src/aac_decoder/aac_decoder.cpp	/^int FilterRegion(int size, int dir, int order, int *audioCoef, int *a, int *hist)$/;"	f	typeref:typename:int
+FrameHeader	src/mp3_decoder/mp3_decoder.h	/^typedef struct FrameHeader {$/;"	s
+FrameHeader_t	src/mp3_decoder/mp3_decoder.h	/^} FrameHeader_t;$/;"	t	typeref:struct:FrameHeader
+FreqInvertRescale	src/mp3_decoder/mp3_decoder.cpp	/^int FreqInvertRescale(int *y, int *xPrev, int blockIdx, int es){$/;"	f	typeref:typename:int
+GBITS_IN_DCT4	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  GBITS_IN_DCT4       = 4;                                      \/* min guard bits /;"	v	typeref:typename:const uint8_t
+Gain	src/Audio.cpp	/^int32_t Audio::Gain(int16_t s[2]) {$/;"	f	class:Audio	typeref:typename:int32_t
+GainControlInfo_t	src/aac_decoder/aac_decoder.h	/^} GainControlInfo_t;$/;"	t	typeref:struct:_GainControlInfo_t
+GenerateNoiseVector	src/aac_decoder/aac_decoder.cpp	/^void GenerateNoiseVector(int *coef, int *last, int nVals)$/;"	f	typeref:typename:void
+Get32BitVal	src/aac_decoder/aac_decoder.cpp	/^uint32_t Get32BitVal(uint32_t *last)$/;"	f	typeref:typename:uint32_t
+GetADTSChannelMapping	src/aac_decoder/aac_decoder.cpp	/^int GetADTSChannelMapping(uint8_t *buf, int bitOffset, int bitsAvail)$/;"	f	typeref:typename:int
+GetBits	src/aac_decoder/aac_decoder.cpp	/^uint32_t GetBits(int nBits)$/;"	f	typeref:typename:uint32_t
+GetBits	src/mp3_decoder/mp3_decoder.cpp	/^unsigned int GetBits(BitStreamInfo_t *bsi, int nBits) {$/;"	f	typeref:typename:unsigned int
+GetBitsNoAdvance	src/aac_decoder/aac_decoder.cpp	/^uint32_t GetBitsNoAdvance(int nBits)$/;"	f	typeref:typename:uint32_t
+GetNumChannelsADIF	src/aac_decoder/aac_decoder.cpp	/^int GetNumChannelsADIF(int nPCE)$/;"	f	typeref:typename:int
+GetSampRateIdx	src/aac_decoder/aac_decoder.cpp	/^int GetSampRateIdx(int sampRate)$/;"	f	typeref:typename:int
+GetSampleRateIdxADIF	src/aac_decoder/aac_decoder.cpp	/^int GetSampleRateIdxADIF(int nPCE)$/;"	f	typeref:typename:int
+HUFFTAB_SPEC_OFFSET	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  HUFFTAB_SPEC_OFFSET = 1;$/;"	v	typeref:typename:const uint8_t
+HuffInfo_t	src/aac_decoder/aac_decoder.h	/^} HuffInfo_t;$/;"	t	typeref:struct:_HuffInfo_t
+HuffTabLookup	src/mp3_decoder/mp3_decoder.h	/^typedef struct HuffTabLookup {$/;"	s
+HuffTabLookup_t	src/mp3_decoder/mp3_decoder.h	/^} HuffTabLookup_t;$/;"	t	typeref:struct:HuffTabLookup
+HuffTabType	src/mp3_decoder/mp3_decoder.h	/^typedef enum HuffTabType {$/;"	g
+HuffTabType_t	src/mp3_decoder/mp3_decoder.h	/^} HuffTabType_t;$/;"	t	typeref:enum:HuffTabType
+HuffmanInfo	src/mp3_decoder/mp3_decoder.h	/^typedef struct HuffmanInfo {$/;"	s
+HuffmanInfo_t	src/mp3_decoder/mp3_decoder.h	/^} HuffmanInfo_t;$/;"	t	typeref:struct:HuffmanInfo
+HybridTransform	src/mp3_decoder/mp3_decoder.cpp	/^int HybridTransform(int *xCurr, int *xPrev, int y[m_BLOCK_SIZE][m_NBANDS], SideInfoSub_t *sis, B/;"	f	typeref:typename:int
+I2Sstart	src/Audio.cpp	/^esp_err_t Audio::I2Sstart(uint8_t i2s_num) {$/;"	f	class:Audio	typeref:typename:esp_err_t
+I2Sstop	src/Audio.cpp	/^esp_err_t Audio::I2Sstop(uint8_t i2s_num) {$/;"	f	class:Audio	typeref:typename:esp_err_t
+ICSInfo_t	src/aac_decoder/aac_decoder.h	/^} ICSInfo_t;$/;"	t	typeref:struct:_ICSInfo_t
+IIR_calculateCoefficients	src/Audio.cpp	/^void Audio::IIR_calculateCoefficients(){  \/\/ Infinite Impulse Response (IIR) filters$/;"	f	class:Audio	typeref:typename:void
+IIR_filterChain	src/Audio.cpp	/^int16_t* Audio::IIR_filterChain(int16_t iir_in[2], bool clear){  \/\/ Infinite Impulse Response /;"	f	class:Audio	typeref:typename:int16_t *
+IMDCT	src/aac_decoder/aac_decoder.cpp	/^int IMDCT(int ch, int chOut, short *outbuf)$/;"	f	typeref:typename:int
+IMDCT	src/mp3_decoder/mp3_decoder.cpp	/^int IMDCT( int gr, int ch) {$/;"	f	typeref:typename:int
+IMDCT12x3	src/mp3_decoder/mp3_decoder.cpp	/^int IMDCT12x3(int *xCurr, int *xPrev, int *y, int btPrev, int blockIdx, int gb){$/;"	f	typeref:typename:int
+IMDCT36	src/mp3_decoder/mp3_decoder.cpp	/^int IMDCT36(int *xCurr, int *xPrev, int *y, int btCurr, int btPrev, int blockIdx, int gb){$/;"	f	typeref:typename:int
+IMDCTInfo	src/mp3_decoder/mp3_decoder.h	/^typedef struct IMDCTInfo {$/;"	s
+IMDCTInfo_t	src/mp3_decoder/mp3_decoder.h	/^} IMDCTInfo_t;$/;"	t	typeref:struct:IMDCTInfo
+INTERNAL_DAC	src/Audio.h	/^    enum : int { EXTERNAL_I2S = 0, INTERNAL_DAC = 1, INTERNAL_PDM = 2 };$/;"	e	enum:Audio::__anonb0bba0c40203
+INTERNAL_PDM	src/Audio.h	/^    enum : int { EXTERNAL_I2S = 0, INTERNAL_DAC = 1, INTERNAL_PDM = 2 };$/;"	e	enum:Audio::__anonb0bba0c40203
+ISFIIP	src/mp3_decoder/mp3_decoder.h	/^const int ISFIIP[2][2] PROGMEM = {$/;"	v	typeref:typename:const int[2][2]PROGMEM
+ISFMpeg1	src/mp3_decoder/mp3_decoder.cpp	/^const int ISFMpeg1[2][7] PROGMEM = {$/;"	v	typeref:typename:const int[2][7]PROGMEM
+ISFMpeg2	src/mp3_decoder/mp3_decoder.cpp	/^const int ISFMpeg2[2][2][16] PROGMEM = {$/;"	v	typeref:typename:const int[2][2][16]PROGMEM
+InBuff	src/Audio.h	/^    AudioBuffer InBuff; \/\/ instance of input buffer$/;"	m	class:Audio	typeref:typename:AudioBuffer
+IntensityProcMPEG1	src/mp3_decoder/mp3_decoder.cpp	/^void IntensityProcMPEG1(int x[m_MAX_NCHAN][m_MAX_NSAMP], int nSamps,  ScaleFactorInfoSub_t *sfis/;"	f	typeref:typename:void
+IntensityProcMPEG2	src/mp3_decoder/mp3_decoder.cpp	/^void IntensityProcMPEG2(int x[m_MAX_NCHAN][m_MAX_NSAMP], int nSamps,$/;"	f	typeref:typename:void
+InvRNormalized	src/aac_decoder/aac_decoder.cpp	/^int InvRNormalized(int r)$/;"	f	typeref:typename:int
+InvRootR	src/aac_decoder/aac_decoder.cpp	/^int InvRootR(int r)$/;"	f	typeref:typename:int
+Joint	src/mp3_decoder/mp3_decoder.h	/^    Joint = 0x01,       \/* coupled channels - layer III: mix of M-S and intensity, Layers I\/II/;"	e	enum:__anonbeff386b0203
+LEFTCHANNEL	src/Audio.h	/^    typedef enum { LEFTCHANNEL=0, RIGHTCHANNEL=1 } SampleIndex;$/;"	e	enum:Audio::__anonb0bba0c40603
+LOG2_EXP_INV	src/aac_decoder/aac_decoder.cpp	/^const uint32_t LOG2_EXP_INV        = 0x58b90bfc;    \/* 1\/log2(e), Q31 *\/$/;"	v	typeref:typename:const uint32_t
+MADD64	src/aac_decoder/aac_decoder.cpp	/^inline int64_t MADD64(int64_t sum64, int x, int y){$/;"	f	typeref:typename:int64_t
+MADD64	src/mp3_decoder/mp3_decoder.h	/^inline uint64_t MADD64(uint64_t sum64, int x, int y) {sum64 += (uint64_t) x * (uint64_t) y; retu/;"	f	typeref:typename:uint64_t
+MAX	src/aac_decoder/aac_decoder.h	/^#define MAX(/;"	d
+MAX_NCHANS_ELEM	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  MAX_NCHANS_ELEM     = 2;             \/* max number of channels in any single bit/;"	v	typeref:typename:const uint8_t
+MAX_NUM_PCE_ADIF	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  MAX_NUM_PCE_ADIF    = 16;$/;"	v	typeref:typename:const uint8_t
+MIN	src/aac_decoder/aac_decoder.h	/^#define MIN(/;"	d
+MP3ClearBadFrame	src/mp3_decoder/mp3_decoder.cpp	/^void MP3ClearBadFrame( short *outbuf) {$/;"	f	typeref:typename:void
+MP3DecInfo	src/mp3_decoder/mp3_decoder.h	/^typedef struct MP3DecInfo {$/;"	s
+MP3DecInfo_t	src/mp3_decoder/mp3_decoder.h	/^} MP3DecInfo_t;$/;"	t	typeref:struct:MP3DecInfo
+MP3Decode	src/mp3_decoder/mp3_decoder.cpp	/^int MP3Decode( unsigned char *inbuf, int *bytesLeft, short *outbuf, int useSize){$/;"	f	typeref:typename:int
+MP3Decoder_AllocateBuffers	src/mp3_decoder/mp3_decoder.cpp	/^bool MP3Decoder_AllocateBuffers(void)$/;"	f	typeref:typename:bool
+MP3Decoder_ClearBuffer	src/mp3_decoder/mp3_decoder.cpp	/^void MP3Decoder_ClearBuffer(void) {$/;"	f	typeref:typename:void
+MP3Decoder_FreeBuffers	src/mp3_decoder/mp3_decoder.cpp	/^void MP3Decoder_FreeBuffers()$/;"	f	typeref:typename:void
+MP3Dequantize	src/mp3_decoder/mp3_decoder.cpp	/^int MP3Dequantize(int gr){$/;"	f	typeref:typename:int
+MP3FindFreeSync	src/mp3_decoder/mp3_decoder.cpp	/^int MP3FindFreeSync(unsigned char *buf, unsigned char firstFH[4], int nBytes){$/;"	f	typeref:typename:int
+MP3FindSyncWord	src/mp3_decoder/mp3_decoder.cpp	/^int MP3FindSyncWord(unsigned char *buf, int nBytes) {$/;"	f	typeref:typename:int
+MP3FrameInfo	src/mp3_decoder/mp3_decoder.h	/^typedef struct MP3FrameInfo {$/;"	s
+MP3FrameInfo_t	src/mp3_decoder/mp3_decoder.h	/^} MP3FrameInfo_t;$/;"	t	typeref:struct:MP3FrameInfo
+MP3GetBitrate	src/mp3_decoder/mp3_decoder.cpp	/^int MP3GetBitrate(){return m_MP3FrameInfo->bitrate;}$/;"	f	typeref:typename:int
+MP3GetBitsPerSample	src/mp3_decoder/mp3_decoder.cpp	/^int MP3GetBitsPerSample(){return m_MP3FrameInfo->bitsPerSample;}$/;"	f	typeref:typename:int
+MP3GetChannels	src/mp3_decoder/mp3_decoder.cpp	/^int MP3GetChannels(){return m_MP3FrameInfo->nChans;}$/;"	f	typeref:typename:int
+MP3GetLastFrameInfo	src/mp3_decoder/mp3_decoder.cpp	/^void MP3GetLastFrameInfo() {$/;"	f	typeref:typename:void
+MP3GetNextFrameInfo	src/mp3_decoder/mp3_decoder.cpp	/^int MP3GetNextFrameInfo(unsigned char *buf) {$/;"	f	typeref:typename:int
+MP3GetOutputSamps	src/mp3_decoder/mp3_decoder.cpp	/^int MP3GetOutputSamps(){return m_MP3FrameInfo->outputSamps;}$/;"	f	typeref:typename:int
+MP3GetSampRate	src/mp3_decoder/mp3_decoder.cpp	/^int MP3GetSampRate(){return m_MP3FrameInfo->samprate;}$/;"	f	typeref:typename:int
+MPEG1	src/mp3_decoder/mp3_decoder.h	/^    MPEG1 =  0,$/;"	e	enum:__anonbeff386b0303
+MPEG2	src/mp3_decoder/mp3_decoder.h	/^    MPEG2 =  1,$/;"	e	enum:__anonbeff386b0303
+MPEG25	src/mp3_decoder/mp3_decoder.h	/^    MPEG25 = 2$/;"	e	enum:__anonbeff386b0303
+MPEGVersion_t	src/mp3_decoder/mp3_decoder.h	/^} MPEGVersion_t;$/;"	t	typeref:enum:__anonbeff386b0303
+MULSHIFT32	src/aac_decoder/aac_decoder.cpp	/^inline int MULSHIFT32(int x, int y){int z; z = (int64_t)x * (int64_t)y >> 32; return z;}$/;"	f	typeref:typename:int
+MULSHIFT32	src/mp3_decoder/mp3_decoder.h	/^inline int MULSHIFT32(int x, int y) { int z; z = (uint64_t) x * (uint64_t) y >> 32; return z;}$/;"	f	typeref:typename:int
+MidSideProc	src/mp3_decoder/mp3_decoder.cpp	/^void MidSideProc(int x[m_MAX_NCHAN][m_MAX_NSAMP], int nSamps, int mOut[2]){$/;"	f	typeref:typename:void
+Mono	src/mp3_decoder/mp3_decoder.h	/^    Mono = 0x03         \/* one channel *\/$/;"	e	enum:__anonbeff386b0203
+NRTab	src/mp3_decoder/mp3_decoder.h	/^const char NRTab[6][3][4] = {$/;"	v	typeref:typename:const char[6][3][4]
+NSAMPS_LONG	src/aac_decoder/aac_decoder.cpp	/^const uint32_t NSAMPS_LONG         = 1024;$/;"	v	typeref:typename:const uint32_t
+NSAMPS_SHORT	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  NSAMPS_SHORT        = 128;$/;"	v	typeref:typename:const uint8_t
+NUM_DEF_CHAN_MAPS	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  NUM_DEF_CHAN_MAPS   = 8;$/;"	v	typeref:typename:const uint8_t
+NUM_IMDCT_SIZES	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  NUM_IMDCT_SIZES     = 2;$/;"	v	typeref:typename:const uint8_t
+NUM_INST_TAG_BITS	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  NUM_INST_TAG_BITS   = 4;$/;"	v	typeref:typename:const uint8_t
+NUM_ITER_INVSQRT	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  NUM_ITER_INVSQRT    = 4;$/;"	v	typeref:typename:const uint8_t
+NUM_ITER_IRN	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  NUM_ITER_IRN        = 5;$/;"	v	typeref:typename:const uint8_t
+NUM_SAMPLE_RATES	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  NUM_SAMPLE_RATES    = 12;$/;"	v	typeref:typename:const uint8_t
+NUM_SYN_ID_BITS	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  NUM_SYN_ID_BITS     = 3;$/;"	v	typeref:typename:const uint8_t
+NUM_TERMS_RPI	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  NUM_TERMS_RPI       = 5;$/;"	v	typeref:typename:const uint8_t
+NUM_TIME_SLOTS	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  NUM_TIME_SLOTS      = 16;$/;"	v	typeref:typename:const uint8_t
+NWINDOWS_LONG	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  NWINDOWS_LONG       = 1;$/;"	v	typeref:typename:const uint8_t
+NWINDOWS_SHORT	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  NWINDOWS_SHORT      = 8;$/;"	v	typeref:typename:const uint8_t
+PNS	src/aac_decoder/aac_decoder.cpp	/^int PNS(int ch)$/;"	f	typeref:typename:int
+PROGMEM	src/aac_decoder/aac_decoder.cpp	/^const HuffInfo_t huffTabScaleFactInfo PROGMEM =$/;"	v	typeref:typename:const HuffInfo_t huffTabScaleFactInfo
+PSInfoBase_t	src/aac_decoder/aac_decoder.h	/^} PSInfoBase_t;$/;"	t	typeref:struct:_PSInfoBase_t
+PolyphaseMono	src/mp3_decoder/mp3_decoder.cpp	/^void PolyphaseMono(short *pcm, int *vbuf, const uint32_t *coefBase){$/;"	f	typeref:typename:void
+PolyphaseStereo	src/mp3_decoder/mp3_decoder.cpp	/^void PolyphaseStereo(short *pcm, int *vbuf, const uint32_t *coefBase){$/;"	f	typeref:typename:void
+PostMultiply	src/aac_decoder/aac_decoder.cpp	/^void PostMultiply(int tabidx, int *fft1)$/;"	f	typeref:typename:void
+PostMultiplyRescale	src/aac_decoder/aac_decoder.cpp	/^void PostMultiplyRescale(int tabidx, int *fft1, int es)$/;"	f	typeref:typename:void
+PreMultiply	src/aac_decoder/aac_decoder.cpp	/^void PreMultiply(int tabidx, int *zbuf1)$/;"	f	typeref:typename:void
+PreMultiplyRescale	src/aac_decoder/aac_decoder.cpp	/^void PreMultiplyRescale(int tabidx, int *zbuf1, int es)$/;"	f	typeref:typename:void
+PrepareRawBlock	src/aac_decoder/aac_decoder.cpp	/^int PrepareRawBlock()$/;"	f	typeref:typename:int
+ProgConfigElement_t	src/aac_decoder/aac_decoder.h	/^} ProgConfigElement_t;$/;"	t	typeref:struct:_ProgConfigElement_t
+PulseInfo_t	src/aac_decoder/aac_decoder.h	/^} PulseInfo_t;$/;"	t	typeref:struct:_PulseInfo_t
+Q26_3	src/aac_decoder/aac_decoder.cpp	/^const uint32_t Q26_3               = 0x0c000000;    \/* Q26:  3.0 *\/$/;"	v	typeref:typename:const uint32_t
+Q28_15	src/aac_decoder/aac_decoder.cpp	/^const uint32_t Q28_15              = 0x30000000;    \/* Q28: 1.5 *\/$/;"	v	typeref:typename:const uint32_t
+Q28_2	src/aac_decoder/aac_decoder.cpp	/^const uint32_t Q28_2               = 0x20000000;    \/* Q28: 2.0 *\/$/;"	v	typeref:typename:const uint32_t
+R4Core	src/aac_decoder/aac_decoder.cpp	/^void R4Core(int *x, int bg, int gp, int *wtab)$/;"	f	typeref:typename:void
+R4Core32	src/aac_decoder/aac_decoder.cpp	/^void R4Core32(int *r0)$/;"	f	typeref:typename:void
+R4FFT	src/aac_decoder/aac_decoder.cpp	/^void R4FFT(int tabidx, int *x)$/;"	f	typeref:typename:void
+R4FirstPass	src/aac_decoder/aac_decoder.cpp	/^void R4FirstPass(int *x, int bg)$/;"	f	typeref:typename:void
+R8FirstPass	src/aac_decoder/aac_decoder.cpp	/^void R8FirstPass(int *x, int bg)$/;"	f	typeref:typename:void
+R8FirstPass32	src/aac_decoder/aac_decoder.cpp	/^void R8FirstPass32(int *r0)$/;"	f	typeref:typename:void
+RIGHTCHANNEL	src/Audio.h	/^    typedef enum { LEFTCHANNEL=0, RIGHTCHANNEL=1 } SampleIndex;$/;"	e	enum:Audio::__anonb0bba0c40603
+RatioPowInv	src/aac_decoder/aac_decoder.cpp	/^int RatioPowInv(int a, int b, int c)$/;"	f	typeref:typename:int
+RefillBitstreamCache	src/aac_decoder/aac_decoder.cpp	/^inline void RefillBitstreamCache()$/;"	f	typeref:typename:void
+RefillBitstreamCache	src/mp3_decoder/mp3_decoder.cpp	/^void RefillBitstreamCache(BitStreamInfo_t *bsi) {$/;"	f	typeref:typename:void
+SAMPLES_PER_SLOT	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  SAMPLES_PER_SLOT    = 2;             \/* RATE in spec *\/$/;"	v	typeref:typename:const uint8_t
+SAR64	src/mp3_decoder/mp3_decoder.h	/^inline uint64_t SAR64(uint64_t x, int n) {return x >> n;}$/;"	f	typeref:typename:uint64_t
+SFBandTable	src/mp3_decoder/mp3_decoder.h	/^typedef struct SFBandTable {$/;"	s
+SFBandTable_t	src/mp3_decoder/mp3_decoder.h	/^} SFBandTable_t;$/;"	t	typeref:struct:SFBandTable
+SF_OFFSET	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  SF_OFFSET           = 100;$/;"	v	typeref:typename:const uint8_t
+SQRTHALF	src/aac_decoder/aac_decoder.cpp	/^const uint32_t SQRTHALF            = 0x5a82799a;    \/* sqrt(0.5), format = Q31 *\/$/;"	v	typeref:typename:const uint32_t
+SYNCWORDH	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  SYNCWORDH           = 0xff;          \/* 12-bit syncword *\/$/;"	v	typeref:typename:const uint8_t
+SYNCWORDL	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  SYNCWORDL           = 0xf0;$/;"	v	typeref:typename:const uint8_t
+SampleIndex	src/Audio.h	/^    typedef enum { LEFTCHANNEL=0, RIGHTCHANNEL=1 } SampleIndex;$/;"	t	class:Audio	typeref:enum:Audio::__anonb0bba0c40603
+ScaleFactorInfoSub	src/mp3_decoder/mp3_decoder.h	/^typedef struct ScaleFactorInfoSub {    \/* max bits in scalefactors = 5, so use char's to save s/;"	s
+ScaleFactorInfoSub_t	src/mp3_decoder/mp3_decoder.h	/^} ScaleFactorInfoSub_t;$/;"	t	typeref:struct:ScaleFactorInfoSub
+ScaleFactorJS	src/mp3_decoder/mp3_decoder.h	/^typedef struct ScaleFactorJS { \/* used in MPEG 2, 2.5 intensity (joint) stereo only *\/$/;"	s
+ScaleFactorJS_t	src/mp3_decoder/mp3_decoder.h	/^} ScaleFactorJS_t;$/;"	t	typeref:struct:ScaleFactorJS
+ScaleNoiseVector	src/aac_decoder/aac_decoder.cpp	/^int ScaleNoiseVector(int *coef, int nVals, int sf)$/;"	f	typeref:typename:int
+SetBitstreamPointer	src/aac_decoder/aac_decoder.cpp	/^void SetBitstreamPointer(int nBytes, uint8_t *buf)$/;"	f	typeref:typename:void
+SetBitstreamPointer	src/mp3_decoder/mp3_decoder.cpp	/^void SetBitstreamPointer(BitStreamInfo_t *bsi, int nBytes, unsigned char *buf) {$/;"	f	typeref:typename:void
+SetRawBlockParams	src/aac_decoder/aac_decoder.cpp	/^int SetRawBlockParams(int copyLast, int nChans, int sampRate, int profile)$/;"	f	typeref:typename:int
+SideInfo	src/mp3_decoder/mp3_decoder.h	/^typedef struct SideInfo {$/;"	s
+SideInfoSub	src/mp3_decoder/mp3_decoder.h	/^typedef struct SideInfoSub {$/;"	s
+SideInfoSub_t	src/mp3_decoder/mp3_decoder.h	/^} SideInfoSub_t;$/;"	t	typeref:struct:SideInfoSub
+SideInfo_t	src/mp3_decoder/mp3_decoder.h	/^} SideInfo_t;$/;"	t	typeref:struct:SideInfo
+SqrtFix	src/aac_decoder/aac_decoder.cpp	/^int SqrtFix(int q, int fBitsIn, int *fBitsOut)$/;"	f	typeref:typename:int
+Stereo	src/mp3_decoder/mp3_decoder.h	/^    Stereo = 0x00,      \/* two independent channels, but L and R frames might have different # /;"	e	enum:__anonbeff386b0203
+StereoMode_t	src/mp3_decoder/mp3_decoder.h	/^} StereoMode_t;$/;"	t	typeref:enum:__anonbeff386b0203
+StereoProcess	src/aac_decoder/aac_decoder.cpp	/^int StereoProcess()$/;"	f	typeref:typename:int
+StereoProcessGroup	src/aac_decoder/aac_decoder.cpp	/^void StereoProcessGroup(int *coefL, int *coefR, const uint16_t *sfbTab,$/;"	f	typeref:typename:void
+Subband	src/mp3_decoder/mp3_decoder.cpp	/^int Subband( short *pcmBuf) {$/;"	f	typeref:typename:int
+SubbandInfo	src/mp3_decoder/mp3_decoder.h	/^typedef struct SubbandInfo {$/;"	s
+SubbandInfo_t	src/mp3_decoder/mp3_decoder.h	/^} SubbandInfo_t;$/;"	t	typeref:struct:SubbandInfo
+TNSFilter	src/aac_decoder/aac_decoder.cpp	/^int TNSFilter(int ch)$/;"	f	typeref:typename:int
+TNSInfo_t	src/aac_decoder/aac_decoder.h	/^} TNSInfo_t;$/;"	t	typeref:struct:_TNSInfo_t
+U64	src/aac_decoder/aac_decoder.h	/^} U64;$/;"	t	typeref:union:_U64
+UnpackADIFHeader	src/aac_decoder/aac_decoder.cpp	/^int UnpackADIFHeader(uint8_t **buf, int *bitOffset, int *bitsAvail)$/;"	f	typeref:typename:int
+UnpackADTSHeader	src/aac_decoder/aac_decoder.cpp	/^int UnpackADTSHeader(uint8_t **buf, int *bitOffset, int *bitsAvail)$/;"	f	typeref:typename:int
+UnpackFrameHeader	src/mp3_decoder/mp3_decoder.cpp	/^int UnpackFrameHeader(unsigned char *buf){$/;"	f	typeref:typename:int
+UnpackPairsEsc	src/aac_decoder/aac_decoder.cpp	/^void UnpackPairsEsc(int cb, int nVals, int *coef)$/;"	f	typeref:typename:void
+UnpackPairsNoEsc	src/aac_decoder/aac_decoder.cpp	/^void UnpackPairsNoEsc(int cb, int nVals, int *coef)$/;"	f	typeref:typename:void
+UnpackQuads	src/aac_decoder/aac_decoder.cpp	/^void UnpackQuads(int cb, int nVals, int *coef)$/;"	f	typeref:typename:void
+UnpackSFMPEG1	src/mp3_decoder/mp3_decoder.cpp	/^void UnpackSFMPEG1(BitStreamInfo_t *bsi, SideInfoSub_t *sis,$/;"	f	typeref:typename:void
+UnpackSFMPEG2	src/mp3_decoder/mp3_decoder.cpp	/^void UnpackSFMPEG2(BitStreamInfo_t *bsi, SideInfoSub_t *sis,$/;"	f	typeref:typename:void
+UnpackScaleFactors	src/mp3_decoder/mp3_decoder.cpp	/^int UnpackScaleFactors( unsigned char *buf, int *bitOffset, int bitsAvail, int gr, int ch){$/;"	f	typeref:typename:int
+UnpackSideInfo	src/mp3_decoder/mp3_decoder.cpp	/^int UnpackSideInfo( unsigned char *buf) {$/;"	f	typeref:typename:int
+UnpackZeros	src/aac_decoder/aac_decoder.cpp	/^void UnpackZeros(int nVals, int *coef)$/;"	f	typeref:typename:void
+WinPrevious	src/mp3_decoder/mp3_decoder.cpp	/^void WinPrevious(int *xPrev, int *xPrevWin, int btPrev){$/;"	f	typeref:typename:void
+X0_COEF_2	src/aac_decoder/aac_decoder.cpp	/^const uint32_t X0_COEF_2           = 0xc0000000;    \/* Q29: -2.0 *\/$/;"	v	typeref:typename:const uint32_t
+X0_OFF_2	src/aac_decoder/aac_decoder.cpp	/^const uint32_t X0_OFF_2            = 0x60000000;    \/* Q29:  3.0 *\/$/;"	v	typeref:typename:const uint32_t
+_AACDecInfo_t	src/aac_decoder/aac_decoder.h	/^typedef struct _AACDecInfo_t {$/;"	s
+_AACFrameInfo_t	src/aac_decoder/aac_decoder.h	/^typedef struct _AACFrameInfo_t {$/;"	s
+_ADIFHeader_t	src/aac_decoder/aac_decoder.h	/^typedef struct _ADIFHeader_t {$/;"	s
+_ADTSHeader_t	src/aac_decoder/aac_decoder.h	/^typedef struct _ADTSHeader_t {$/;"	s
+_GainControlInfo_t	src/aac_decoder/aac_decoder.h	/^typedef struct _GainControlInfo_t {$/;"	s
+_HuffInfo_t	src/aac_decoder/aac_decoder.h	/^typedef struct _HuffInfo_t {$/;"	s
+_ICSInfo_t	src/aac_decoder/aac_decoder.h	/^typedef struct _ICSInfo_t {$/;"	s
+_PSInfoBase_t	src/aac_decoder/aac_decoder.h	/^typedef struct _PSInfoBase_t {$/;"	s
+_ProgConfigElement_t	src/aac_decoder/aac_decoder.h	/^typedef struct _ProgConfigElement_t {$/;"	s
+_PulseInfo_t	src/aac_decoder/aac_decoder.h	/^typedef struct _PulseInfo_t {$/;"	s
+_TNSInfo_t	src/aac_decoder/aac_decoder.h	/^typedef struct _TNSInfo_t {$/;"	s
+_U64	src/aac_decoder/aac_decoder.h	/^typedef union _U64 {$/;"	u
+__anon82e632d50103	src/aac_decoder/aac_decoder.h	/^enum {$/;"	g
+__anon82e632d50203	src/aac_decoder/aac_decoder.h	/^enum {$/;"	g
+__anon82e632d50303	src/aac_decoder/aac_decoder.h	/^enum {$/;"	g
+__anon82e632d50408	src/aac_decoder/aac_decoder.h	/^    struct {$/;"	s	union:_U64
+__anonb0bba0c40103	src/Audio.h	/^    enum : int { APLL_AUTO = -1, APLL_ENABLE = 1, APLL_DISABLE = 0 };$/;"	g	class:Audio	typeref:typename:int
+__anonb0bba0c40203	src/Audio.h	/^    enum : int { EXTERNAL_I2S = 0, INTERNAL_DAC = 1, INTERNAL_PDM = 2 };$/;"	g	class:Audio	typeref:typename:int
+__anonb0bba0c40303	src/Audio.h	/^    enum : int { CODEC_NONE = 0, CODEC_WAV = 1, CODEC_MP3 = 2, CODEC_AAC = 4, CODEC_FLAC = 5};$/;"	g	class:Audio	typeref:typename:int
+__anonb0bba0c40403	src/Audio.h	/^    enum : int { FORMAT_NONE = 0, FORMAT_M3U = 1, FORMAT_PLS = 2, FORMAT_ASX = 3};$/;"	g	class:Audio	typeref:typename:int
+__anonb0bba0c40503	src/Audio.h	/^    enum : int { AUDIO_NONE, AUDIO_HEADER , AUDIO_DATA, AUDIO_METADATA, AUDIO_PLAYLISTINIT,$/;"	g	class:Audio	typeref:typename:int
+__anonb0bba0c40603	src/Audio.h	/^    typedef enum { LEFTCHANNEL=0, RIGHTCHANNEL=1 } SampleIndex;$/;"	g	class:Audio
+__anonbeff386b0103	src/mp3_decoder/mp3_decoder.h	/^enum {$/;"	g
+__anonbeff386b0203	src/mp3_decoder/mp3_decoder.h	/^typedef enum {          \/* map these to the corresponding 2-bit values in the frame header *\/$/;"	g
+__anonbeff386b0303	src/mp3_decoder/mp3_decoder.h	/^typedef enum {          \/* map to 0,1,2 to make table indexing easier *\/$/;"	g
+__anonbeff386b0408	src/mp3_decoder/mp3_decoder.h	/^typedef struct {$/;"	s
+__anonce26db5f0103	src/Audio.cpp	/^    enum: uint8_t {in = 0, out = 1};$/;"	g	function:Audio::IIR_filterChain	typeref:typename:uint8_t	file:
+_aac_BitStreamInfo_t	src/aac_decoder/aac_decoder.h	/^typedef struct _aac_BitStreamInfo_t {$/;"	s
+_filter	src/Audio.h	/^    typedef struct _filter{$/;"	s	class:Audio
+a0	src/Audio.h	/^        float a0;$/;"	m	struct:Audio::_filter	typeref:typename:float
+a1	src/Audio.h	/^        float a1;$/;"	m	struct:Audio::_filter	typeref:typename:float
+a2	src/Audio.h	/^        float a2;$/;"	m	struct:Audio::_filter	typeref:typename:float
+aac_BitStreamInfo_t	src/aac_decoder/aac_decoder.h	/^} aac_BitStreamInfo_t;$/;"	t	typeref:struct:_aac_BitStreamInfo_t
+ade	src/aac_decoder/aac_decoder.h	/^    uint8_t ade[7];        \/* [MAX_NUM_ADE] instance tag for ADE elements *\/$/;"	m	struct:_ProgConfigElement_t	typeref:typename:uint8_t[7]
+adjNum	src/aac_decoder/aac_decoder.h	/^    uint8_t adjNum[3][8];      \/\/ [MAX_GAIN_BANDS][MAX_GAIN_WIN]$/;"	m	struct:_GainControlInfo_t	typeref:typename:uint8_t[3][8]
+adtsBlocksLeft	src/aac_decoder/aac_decoder.h	/^    int adtsBlocksLeft;$/;"	m	struct:_AACDecInfo_t	typeref:typename:int
+alevCode	src/aac_decoder/aac_decoder.h	/^    uint8_t alevCode[3][8][7]; \/\/ [MAX_GAIN_BANDS][MAX_GAIN_WIN][MAX_GAIN_ADJUST]$/;"	m	struct:_GainControlInfo_t	typeref:typename:uint8_t[3][8][7]
+alocCode	src/aac_decoder/aac_decoder.h	/^    uint8_t alocCode[3][8][7]; \/\/ [MAX_GAIN_BANDS][MAX_GAIN_WIN][MAX_GAIN_ADJUST]$/;"	m	struct:_GainControlInfo_t	typeref:typename:uint8_t[3][8][7]
+amp	src/aac_decoder/aac_decoder.h	/^    uint8_t amp[4];    \/\/ [MAX_PULSES]$/;"	m	struct:_PulseInfo_t	typeref:typename:uint8_t[4]
+architectures	library.properties	/^architectures=esp32$/;"	k
+audioFileSeek	src/Audio.cpp	/^bool Audio::audioFileSeek(const int8_t speed) {$/;"	f	class:Audio	typeref:typename:bool
+audiofile	src/Audio.h	/^    File              audiofile;    \/\/ @suppress("Abstract class cannot be instantiated")$/;"	m	class:Audio	typeref:typename:File
+author	library.properties	/^author=schreibfaul1$/;"	k
+b1	src/Audio.h	/^        float b1;$/;"	m	struct:Audio::_filter	typeref:typename:float
+b2	src/Audio.h	/^        float b2;$/;"	m	struct:Audio::_filter	typeref:typename:float
+bce	src/aac_decoder/aac_decoder.h	/^    uint8_t bce[15];       \/* [MAX_NUM_BCE] back element channel pair: bit 4 = SCE\/CPE flag, b/;"	m	struct:_ProgConfigElement_t	typeref:typename:uint8_t[15]
+bitRate	src/aac_decoder/aac_decoder.h	/^    int     bitRate;                        \/* bitRate: CBR = bits\/sec, VBR = peak bits\/frame/;"	m	struct:_ADIFHeader_t	typeref:typename:int
+bitRate	src/aac_decoder/aac_decoder.h	/^    int bitRate;    \/* user-accessible info *\/$/;"	m	struct:_AACDecInfo_t	typeref:typename:int
+bitRate	src/aac_decoder/aac_decoder.h	/^    int bitRate;$/;"	m	struct:_AACFrameInfo_t	typeref:typename:int
+bitrate	src/mp3_decoder/mp3_decoder.h	/^    int bitrate;$/;"	m	struct:MP3DecInfo	typeref:typename:int
+bitrate	src/mp3_decoder/mp3_decoder.h	/^    int bitrate;$/;"	m	struct:MP3FrameInfo	typeref:typename:int
+bitrateTab	src/mp3_decoder/mp3_decoder.cpp	/^const int\/*short*\/bitrateTab[3][3][15] PROGMEM = { {$/;"	v	typeref:typename:const int[3][3][15]PROGMEM
+bitrevtab	src/aac_decoder/aac_decoder.cpp	/^const uint8_t bitrevtab[17 + 129] PROGMEM = {$/;"	v	typeref:typename:const uint8_t[17+129]PROGMEM
+bitrevtabOffset	src/aac_decoder/aac_decoder.cpp	/^const uint8_t bitrevtabOffset[NUM_IMDCT_SIZES] PROGMEM = {0, 17};$/;"	v	typeref:typename:const uint8_t[NUM_IMDCT_SIZES]PROGMEM
+bitsPerSample	src/aac_decoder/aac_decoder.h	/^    int bitsPerSample;$/;"	m	struct:_AACFrameInfo_t	typeref:typename:int
+bitsPerSample	src/mp3_decoder/mp3_decoder.h	/^    int bitsPerSample;$/;"	m	struct:MP3FrameInfo	typeref:typename:int
+bitsPerSlotTab	src/mp3_decoder/mp3_decoder.h	/^const short bitsPerSlotTab[3] = { 32, 8, 8 };$/;"	v	typeref:typename:const short[3]
+blockType	src/mp3_decoder/mp3_decoder.h	/^    int blockType;          \/* block type *\/$/;"	m	struct:SideInfoSub	typeref:typename:int
+brIdx	src/mp3_decoder/mp3_decoder.h	/^    int brIdx;              \/* bitrate index (0 - 15) *\/$/;"	m	struct:FrameHeader	typeref:typename:int
+bsType	src/aac_decoder/aac_decoder.h	/^    uint8_t bsType;                         \/* bitstream type: 0 = CBR, 1 = VBR *\/$/;"	m	struct:_ADIFHeader_t	typeref:typename:uint8_t
+bufferFilled	src/Audio.cpp	/^size_t AudioBuffer::bufferFilled() {$/;"	f	class:AudioBuffer	typeref:typename:size_t
+bufferFull	src/aac_decoder/aac_decoder.h	/^    int     bufferFull;                     \/* bits left in bit reservoir *\/$/;"	m	struct:_ADIFHeader_t	typeref:typename:int
+bufferFull	src/aac_decoder/aac_decoder.h	/^    int     bufferFull;                     \/* number of 32-bit words left in enc buffer, 0x7FF/;"	m	struct:_ADTSHeader_t	typeref:typename:int
+bytePtr	src/aac_decoder/aac_decoder.h	/^    uint8_t *bytePtr;$/;"	m	struct:_aac_BitStreamInfo_t	typeref:typename:uint8_t *
+bytePtr	src/mp3_decoder/mp3_decoder.h	/^    unsigned char *bytePtr;$/;"	m	struct:BitStreamInfo	typeref:typename:unsigned char *
+bytesWasRead	src/Audio.cpp	/^void AudioBuffer::bytesWasRead(size_t br) {$/;"	f	class:AudioBuffer	typeref:typename:void
+bytesWritten	src/Audio.cpp	/^void AudioBuffer::bytesWritten(size_t bw) {$/;"	f	class:AudioBuffer	typeref:typename:void
+c18	src/mp3_decoder/mp3_decoder.h	/^const uint32_t c18[9] = { 0x7f834ed0, 0x7ba3751d, 0x7401e4c1, 0x68d9f964, 0x5a82799a, 0x496af3e2/;"	v	typeref:typename:const uint32_t[9]
+c3_0	src/mp3_decoder/mp3_decoder.h	/^const int c3_0 = 0x6ed9eba1; \/* format = Q31, cos(pi\/6) *\/$/;"	v	typeref:typename:const int
+c6	src/mp3_decoder/mp3_decoder.h	/^const int c6[3] = { 0x7ba3751d, 0x5a82799a, 0x2120fb83 }; \/* format = Q31, cos(((0:2) + 0.5) * /;"	v	typeref:typename:const int[3]
+c9_0	src/mp3_decoder/mp3_decoder.h	/^const int c9_0 = 0x6ed9eba1;$/;"	v	typeref:typename:const int
+c9_1	src/mp3_decoder/mp3_decoder.h	/^const int c9_1 = 0x620dbe8b;$/;"	v	typeref:typename:const int
+c9_2	src/mp3_decoder/mp3_decoder.h	/^const int c9_2 = 0x163a1a7e;$/;"	v	typeref:typename:const int
+c9_3	src/mp3_decoder/mp3_decoder.h	/^const int c9_3 = 0x5246dd49;$/;"	v	typeref:typename:const int
+c9_4	src/mp3_decoder/mp3_decoder.h	/^const int c9_4 = 0x7e0e2e32;$/;"	v	typeref:typename:const int
+cachedBits	src/aac_decoder/aac_decoder.h	/^    int cachedBits;$/;"	m	struct:_aac_BitStreamInfo_t	typeref:typename:int
+cachedBits	src/mp3_decoder/mp3_decoder.h	/^    int cachedBits;$/;"	m	struct:BitStreamInfo	typeref:typename:int
+category	library.properties	/^category=Device Control$/;"	k
+cbEndL	src/mp3_decoder/mp3_decoder.h	/^    int cbEndL;             \/* number nonzero long cb's  *\/$/;"	m	struct:__anonbeff386b0408	typeref:typename:int
+cbEndS	src/mp3_decoder/mp3_decoder.h	/^    int cbEndS[3];          \/* number nonzero short cb's, per subbblock *\/$/;"	m	struct:__anonbeff386b0408	typeref:typename:int[3]
+cbEndSMax	src/mp3_decoder/mp3_decoder.h	/^    int cbEndSMax;          \/* max of cbEndS[] *\/$/;"	m	struct:__anonbeff386b0408	typeref:typename:int
+cbType	src/mp3_decoder/mp3_decoder.h	/^    int cbType;             \/* pure long = 0, pure short = 1, mixed = 2 *\/$/;"	m	struct:__anonbeff386b0408	typeref:typename:int
+cce	src/aac_decoder/aac_decoder.h	/^    uint8_t cce[15];       \/* [MAX_NUM_BCE] channel coupling elements: bit 4 = switching flag, /;"	m	struct:_ProgConfigElement_t	typeref:typename:uint8_t[15]
+channelConfig	src/aac_decoder/aac_decoder.h	/^    uint8_t channelConfig;                  \/* 0 = implicit, >0 = use default table *\/$/;"	m	struct:_ADTSHeader_t	typeref:typename:uint8_t
+channelMapTab	src/aac_decoder/aac_decoder.cpp	/^const int8_t channelMapTab[8] PROGMEM = {$/;"	v	typeref:typename:const int8_t[8]PROGMEM
+chbuf	src/Audio.h	/^    char            chbuf[256];$/;"	m	class:Audio	typeref:typename:char[256]
+client	src/Audio.h	/^    WiFiClient        client;       \/\/ @suppress("Abstract class cannot be instantiated")$/;"	m	class:Audio	typeref:typename:WiFiClient
+clientsecure	src/Audio.h	/^    WiFiClientSecure  clientsecure; \/\/ @suppress("Abstract class cannot be instantiated")$/;"	m	class:Audio	typeref:typename:WiFiClientSecure
+coef	src/aac_decoder/aac_decoder.h	/^    int                   coef[2][1024]; \/\/ [MAX_NCHANS_ELEM][AAC_MAX_NSAMPS]$/;"	m	struct:_PSInfoBase_t	typeref:typename:int[2][1024]
+coef	src/aac_decoder/aac_decoder.h	/^    int8_t   coef[60];  \/\/ [MAX_TNS_COEFS] max 3 filters * 20 coefs for 1 long window, or 1 fi/;"	m	struct:_TNSInfo_t	typeref:typename:int8_t[60]
+coef32	src/mp3_decoder/mp3_decoder.cpp	/^const int coef32[31] PROGMEM = {$/;"	v	typeref:typename:const int[31]PROGMEM
+coefRes	src/aac_decoder/aac_decoder.h	/^    uint8_t coefRes[8]; \/\/ [MAX_TNS_FILTERS]$/;"	m	struct:_TNSInfo_t	typeref:typename:uint8_t[8]
+commonWin	src/aac_decoder/aac_decoder.h	/^    int                   commonWin;$/;"	m	struct:_PSInfoBase_t	typeref:typename:int
+compute_audioCurrentTime	src/Audio.cpp	/^void Audio::compute_audioCurrentTime(int bd) {$/;"	f	class:Audio	typeref:typename:void
+connecttoFS	src/Audio.cpp	/^bool Audio::connecttoFS(fs::FS &fs, const char* file) {$/;"	f	class:Audio	typeref:typename:bool
+connecttoSD	src/Audio.cpp	/^bool Audio::connecttoSD(const char* sdfile) {$/;"	f	class:Audio	typeref:typename:bool
+connecttohost	src/Audio.cpp	/^bool Audio::connecttohost(const char* host, const char* user, const char* pwd) {$/;"	f	class:Audio	typeref:typename:bool
+connecttospeech	src/Audio.cpp	/^bool Audio::connecttospeech(const char* speech, const char* lang){$/;"	f	class:Audio	typeref:typename:bool
+copyBit	src/aac_decoder/aac_decoder.h	/^    uint8_t copyBit;                        \/* 0 = no copyright ID, 1 = 72-bit copyright ID fol/;"	m	struct:_ADIFHeader_t	typeref:typename:uint8_t
+copyBit	src/aac_decoder/aac_decoder.h	/^    uint8_t copyBit;                        \/* 1 bit of the 72-bit copyright ID (transmitted as/;"	m	struct:_ADTSHeader_t	typeref:typename:uint8_t
+copyFlag	src/mp3_decoder/mp3_decoder.h	/^    int copyFlag;           \/* copyright flag: 0 = no, 1 = yes *\/$/;"	m	struct:FrameHeader	typeref:typename:int
+copyID	src/aac_decoder/aac_decoder.h	/^    uint8_t copyID[9];                      \/* [ADIF_COPYID_SIZE] optional 72-bit copyright ID /;"	m	struct:_ADIFHeader_t	typeref:typename:uint8_t[9]
+copyStart	src/aac_decoder/aac_decoder.h	/^    uint8_t copyStart;                      \/* 1 = this bit starts the 72-bit ID, 0 = it does n/;"	m	struct:_ADTSHeader_t	typeref:typename:uint8_t
+cos1sin1tab	src/aac_decoder/aac_decoder.cpp	/^const uint32_t cos1sin1tab[514] PROGMEM = {$/;"	v	typeref:typename:const uint32_t[514]PROGMEM
+cos4sin4tab	src/aac_decoder/aac_decoder.cpp	/^const uint32_t cos4sin4tab[128 + 1024] PROGMEM = {$/;"	v	typeref:typename:const uint32_t[128+1024]PROGMEM
+cos4sin4tabOffset	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  cos4sin4tabOffset[2]    PROGMEM = {0, 128};$/;"	v	typeref:typename:const uint8_t[2]PROGMEM
+count	src/aac_decoder/aac_decoder.h	/^    uint8_t count[20];        \/*  count[MAX_HUFF_BITS] = number of codes with length i+1 bits */;"	m	struct:_HuffInfo_t	typeref:typename:uint8_t[20]
+count1TableSelect	src/mp3_decoder/mp3_decoder.h	/^    int count1TableSelect;  \/* index of Huffman table for quad codewords *\/$/;"	m	struct:SideInfoSub	typeref:typename:int
+crc	src/mp3_decoder/mp3_decoder.h	/^    int crc;                \/* CRC flag: 0 = disabled, 1 = enabled *\/$/;"	m	struct:FrameHeader	typeref:typename:int
+crcCheckWord	src/aac_decoder/aac_decoder.h	/^    int     crcCheckWord;                   \/* 16-bit CRC check word (present if protectBit == /;"	m	struct:_ADTSHeader_t	typeref:typename:int
+csa	src/mp3_decoder/mp3_decoder.h	/^const uint32_t csa[8][2] PROGMEM = {$/;"	v	typeref:typename:const uint32_t[8][2]PROGMEM
+currBlockID	src/aac_decoder/aac_decoder.h	/^    int currBlockID;$/;"	m	struct:_AACDecInfo_t	typeref:typename:int
+currInstTag	src/aac_decoder/aac_decoder.h	/^    int currInstTag;$/;"	m	struct:_AACDecInfo_t	typeref:typename:int
+currWinSwitch	src/mp3_decoder/mp3_decoder.h	/^    int currWinSwitch;$/;"	m	struct:BlockCount	typeref:typename:int
+dataBuf	src/aac_decoder/aac_decoder.h	/^    uint8_t               dataBuf[510]; \/\/ [DATA_BUF_SIZE]$/;"	m	struct:_PSInfoBase_t	typeref:typename:uint8_t[510]
+dataCount	src/aac_decoder/aac_decoder.h	/^    int                   dataCount;$/;"	m	struct:_PSInfoBase_t	typeref:typename:int
+dir	src/aac_decoder/aac_decoder.h	/^    uint8_t dir[8];     \/\/ [MAX_TNS_FILTERS]$/;"	m	struct:_TNSInfo_t	typeref:typename:uint8_t[8]
+elemInstTag	src/aac_decoder/aac_decoder.h	/^    uint8_t elemInstTag;   \/* element instance tag *\/$/;"	m	struct:_ProgConfigElement_t	typeref:typename:uint8_t
+elementNumChans	src/aac_decoder/aac_decoder.cpp	/^const uint8_t elementNumChans[8] PROGMEM = {$/;"	v	typeref:typename:const uint8_t[8]PROGMEM
+emphasis	src/mp3_decoder/mp3_decoder.h	/^    int emphasis;           \/* deemphasis mode *\/$/;"	m	struct:FrameHeader	typeref:typename:int
+endsWith	src/Audio.h	/^    bool endsWith (const char* base, const char* str) {$/;"	f	class:Audio	typeref:typename:bool
+fastWin36	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t fastWin36[18] PROGMEM = {$/;"	v	typeref:typename:const uint32_t[18]PROGMEM
+fce	src/aac_decoder/aac_decoder.h	/^    uint8_t fce[15];       \/* [MAX_NUM_FCE] front element channel pair: bit 4 = SCE\/CPE flag, /;"	m	struct:_ProgConfigElement_t	typeref:typename:uint8_t[15]
+fillExtType	src/aac_decoder/aac_decoder.h	/^    int fillExtType;$/;"	m	struct:_AACDecInfo_t	typeref:typename:int
+filter_t	src/Audio.h	/^    } filter_t;$/;"	t	class:Audio	typeref:struct:Audio::_filter
+forceMono	src/Audio.cpp	/^void Audio::forceMono(bool m) { \/\/ #100 mono option$/;"	f	class:Audio	typeref:typename:void
+format	src/aac_decoder/aac_decoder.h	/^    int format;$/;"	m	struct:_AACDecInfo_t	typeref:typename:int
+frameCount	src/aac_decoder/aac_decoder.h	/^    int frameCount;$/;"	m	struct:_AACDecInfo_t	typeref:typename:int
+frameLength	src/aac_decoder/aac_decoder.h	/^    int     frameLength;                    \/* length of frame *\/$/;"	m	struct:_ADTSHeader_t	typeref:typename:int
+freeBitrateFlag	src/mp3_decoder/mp3_decoder.h	/^    int freeBitrateFlag;$/;"	m	struct:MP3DecInfo	typeref:typename:int
+freeBitrateSlots	src/mp3_decoder/mp3_decoder.h	/^    int freeBitrateSlots;$/;"	m	struct:MP3DecInfo	typeref:typename:int
+freeSpace	src/Audio.cpp	/^size_t AudioBuffer::freeSpace() {$/;"	f	class:AudioBuffer	typeref:typename:size_t
+gainBits	src/aac_decoder/aac_decoder.cpp	/^static const uint8_t gainBits[4][3] = {$/;"	v	typeref:typename:const uint8_t[4][3]	file:
+gainControlDataPresent	src/aac_decoder/aac_decoder.h	/^    uint8_t gainControlDataPresent;$/;"	m	struct:_GainControlInfo_t	typeref:typename:uint8_t
+gainControlInfo	src/aac_decoder/aac_decoder.h	/^    GainControlInfo_t     gainControlInfo[2]; \/\/ [MAX_NCHANS_ELEM]$/;"	m	struct:_PSInfoBase_t	typeref:typename:GainControlInfo_t[2]
+gb	src/mp3_decoder/mp3_decoder.h	/^    int gb[m_MAX_NCHAN];                          \/* minimum number of guard bits in huffDecBuf/;"	m	struct:HuffmanInfo	typeref:typename:int[]
+gb	src/mp3_decoder/mp3_decoder.h	/^    int gb[m_MAX_NCHAN];$/;"	m	struct:IMDCTInfo	typeref:typename:int[]
+gbCurrent	src/aac_decoder/aac_decoder.h	/^    int                   gbCurrent[2];  \/\/ [MAX_NCHANS_ELEM]$/;"	m	struct:_PSInfoBase_t	typeref:typename:int[2]
+gbIn	src/mp3_decoder/mp3_decoder.h	/^    int gbIn;$/;"	m	struct:BlockCount	typeref:typename:int
+gbOut	src/mp3_decoder/mp3_decoder.h	/^    int gbOut;$/;"	m	struct:BlockCount	typeref:typename:int
+getAudioCurrentTime	src/Audio.cpp	/^uint32_t Audio::getAudioCurrentTime() {  \/\/ return current time in seconds$/;"	f	class:Audio	typeref:typename:uint32_t
+getAudioFileDuration	src/Audio.cpp	/^uint32_t Audio::getAudioFileDuration() {$/;"	f	class:Audio	typeref:typename:uint32_t
+getBitsPerSample	src/Audio.cpp	/^uint8_t Audio::getBitsPerSample(){$/;"	f	class:Audio	typeref:typename:uint8_t
+getChannels	src/Audio.cpp	/^uint8_t Audio::getChannels(){$/;"	f	class:Audio	typeref:typename:uint8_t
+getDatamode	src/Audio.h	/^    inline uint8_t getDatamode(){return m_datamode;}$/;"	f	class:Audio	typeref:typename:uint8_t
+getFilePos	src/Audio.cpp	/^uint32_t Audio::getFilePos() {$/;"	f	class:Audio	typeref:typename:uint32_t
+getFileSize	src/Audio.cpp	/^uint32_t Audio::getFileSize() {$/;"	f	class:Audio	typeref:typename:uint32_t
+getReadPos	src/Audio.cpp	/^uint32_t AudioBuffer::getReadPos() {$/;"	f	class:AudioBuffer	typeref:typename:uint32_t
+getSampleRate	src/Audio.cpp	/^uint32_t Audio::getSampleRate(){$/;"	f	class:Audio	typeref:typename:uint32_t
+getVolume	src/Audio.cpp	/^uint8_t Audio::getVolume() {$/;"	f	class:Audio	typeref:typename:uint8_t
+getWritePos	src/Audio.cpp	/^uint32_t AudioBuffer::getWritePos() {$/;"	f	class:AudioBuffer	typeref:typename:uint32_t
+globalGain	src/mp3_decoder/mp3_decoder.h	/^    int globalGain;         \/* overall gain for dequantizer *\/$/;"	m	struct:SideInfoSub	typeref:typename:int
+hi32	src/aac_decoder/aac_decoder.h	/^        int32_t  hi32;$/;"	m	struct:_U64::__anon82e632d50408	typeref:typename:int32_t
+home	src/aac_decoder/aac_decoder.h	/^    uint8_t home;                           \/* ignore *\/$/;"	m	struct:_ADIFHeader_t	typeref:typename:uint8_t
+home	src/aac_decoder/aac_decoder.h	/^    uint8_t home;                           \/* ignore *\/$/;"	m	struct:_ADTSHeader_t	typeref:typename:uint8_t
+huffDecBuf	src/mp3_decoder/mp3_decoder.h	/^    int huffDecBuf[m_MAX_NCHAN][m_MAX_NSAMP];       \/* used both for decoded Huffman values and/;"	m	struct:HuffmanInfo	typeref:typename:int[][]
+huffTabLookup	src/mp3_decoder/mp3_decoder.h	/^const HuffTabLookup_t huffTabLookup[m_HUFF_PAIRTABS] PROGMEM = {$/;"	v	typeref:typename:const HuffTabLookup_t[m_HUFF_PAIRTABS]PROGMEM
+huffTabOffset	src/mp3_decoder/mp3_decoder.h	/^const int huffTabOffset[m_HUFF_PAIRTABS] PROGMEM = {$/;"	v	typeref:typename:const int[m_HUFF_PAIRTABS]PROGMEM
+huffTabScaleFact	src/aac_decoder/aac_decoder.cpp	/^const int16_t huffTabScaleFact[121] PROGMEM = { \/* scale factor table [121] *\/$/;"	v	typeref:typename:const int16_t[121]PROGMEM
+huffTabSpec	src/aac_decoder/aac_decoder.cpp	/^const int16_t huffTabSpec[1241] PROGMEM = {$/;"	v	typeref:typename:const int16_t[1241]PROGMEM
+huffTabSpecInfo	src/aac_decoder/aac_decoder.cpp	/^const HuffInfo_t huffTabSpecInfo[11] PROGMEM = {$/;"	v	typeref:typename:const HuffInfo_t[11]PROGMEM
+huffTable	src/mp3_decoder/mp3_decoder.cpp	/^const unsigned short huffTable[4242] PROGMEM = {$/;"	v	typeref:typename:const unsigned short[4242]PROGMEM
+i2s_mclk_pin_select	src/Audio.cpp	/^esp_err_t Audio::i2s_mclk_pin_select(const uint8_t pin) {$/;"	f	class:Audio	typeref:typename:esp_err_t
+iCache	src/aac_decoder/aac_decoder.h	/^    uint32_t iCache;$/;"	m	struct:_aac_BitStreamInfo_t	typeref:typename:uint32_t
+iCache	src/mp3_decoder/mp3_decoder.h	/^    unsigned int iCache;$/;"	m	struct:BitStreamInfo	typeref:typename:unsigned int
+icsInfo	src/aac_decoder/aac_decoder.h	/^    ICSInfo_t             icsInfo[2]; \/\/ [MAX_NCHANS_ELEM]$/;"	m	struct:_PSInfoBase_t	typeref:typename:ICSInfo_t[2]
+icsResBit	src/aac_decoder/aac_decoder.h	/^    uint8_t icsResBit;$/;"	m	struct:_ICSInfo_t	typeref:typename:uint8_t
+id	src/aac_decoder/aac_decoder.h	/^    uint8_t id;                             \/* MPEG bit - should be 1 *\/$/;"	m	struct:_ADTSHeader_t	typeref:typename:uint8_t
+idct9	src/mp3_decoder/mp3_decoder.cpp	/^void idct9(int *x) {$/;"	f	typeref:typename:void
+imdct12	src/mp3_decoder/mp3_decoder.cpp	/^void imdct12(int *x, int *out) {$/;"	f	typeref:typename:void
+imdctWin	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t imdctWin[4][36] PROGMEM = {$/;"	v	typeref:typename:const uint32_t[4][36]PROGMEM
+in	src/Audio.cpp	/^    enum: uint8_t {in = 0, out = 1};$/;"	e	enum:Audio::IIR_filterChain::__anonce26db5f0103	file:
+inBufferFilled	src/Audio.cpp	/^uint32_t Audio::inBufferFilled() {$/;"	f	class:Audio	typeref:typename:uint32_t
+inBufferFree	src/Audio.cpp	/^uint32_t Audio::inBufferFree() {$/;"	f	class:Audio	typeref:typename:uint32_t
+indexOf	src/Audio.h	/^    int indexOf (const char* base, const char* str, int startIndex) {$/;"	f	class:Audio	typeref:typename:int
+init	src/Audio.cpp	/^size_t AudioBuffer::init() {$/;"	f	class:AudioBuffer	typeref:typename:size_t
+initInBuff	src/Audio.cpp	/^void Audio::initInBuff() {$/;"	f	class:Audio	typeref:typename:void
+intensityScale	src/mp3_decoder/mp3_decoder.h	/^    int intensityScale;$/;"	m	struct:ScaleFactorJS	typeref:typename:int
+intensityUsed	src/aac_decoder/aac_decoder.h	/^    int                   intensityUsed[2]; \/\/ [MAX_NCHANS_ELEM]$/;"	m	struct:_PSInfoBase_t	typeref:typename:int[2]
+invQuant3	src/aac_decoder/aac_decoder.cpp	/^static const uint32_t invQuant3[16] PROGMEM = {$/;"	v	typeref:typename:const uint32_t[16]PROGMEM	file:
+invQuant4	src/aac_decoder/aac_decoder.cpp	/^static const uint32_t invQuant4[16] PROGMEM = {$/;"	v	typeref:typename:const uint32_t[16]PROGMEM	file:
+invTab	src/aac_decoder/aac_decoder.cpp	/^static const uint32_t invTab[5] PROGMEM = {0x40000000, 0x20000000, 0x15555555, 0x10000000, 0x0cc/;"	v	typeref:typename:const uint32_t[5]PROGMEM	file:
+invalidTab	src/mp3_decoder/mp3_decoder.h	/^    invalidTab$/;"	e	enum:HuffTabType
+isRunning	src/Audio.h	/^    bool isRunning() {return m_f_running;}$/;"	f	class:Audio	typeref:typename:bool
+kbdWindow	src/aac_decoder/aac_decoder.cpp	/^const uint32_t kbdWindow[128 + 1024] PROGMEM = {$/;"	v	typeref:typename:const uint32_t[128+1024]PROGMEM
+kbdWindowOffset	src/aac_decoder/aac_decoder.cpp	/^const uint8_t kbdWindowOffset[NUM_IMDCT_SIZES] PROGMEM = {0, 128};$/;"	v	typeref:typename:const uint8_t[NUM_IMDCT_SIZES]PROGMEM
+l	src/mp3_decoder/mp3_decoder.h	/^    char l[23];            \/* [band] *\/$/;"	m	struct:ScaleFactorInfoSub	typeref:typename:char[23]
+l	src/mp3_decoder/mp3_decoder.h	/^    int\/*short*\/ l[23];$/;"	m	struct:SFBandTable	typeref:typename:int[23]
+layer	src/aac_decoder/aac_decoder.h	/^    uint8_t layer;                          \/* MPEG layer - should be 0 *\/$/;"	m	struct:_ADTSHeader_t	typeref:typename:uint8_t
+layer	src/mp3_decoder/mp3_decoder.h	/^    int layer;              \/* layer index (1, 2, or 3) *\/$/;"	m	struct:FrameHeader	typeref:typename:int
+layer	src/mp3_decoder/mp3_decoder.h	/^    int layer;$/;"	m	struct:MP3DecInfo	typeref:typename:int
+layer	src/mp3_decoder/mp3_decoder.h	/^    int layer;$/;"	m	struct:MP3FrameInfo	typeref:typename:int
+lce	src/aac_decoder/aac_decoder.h	/^    uint8_t lce[3];        \/* [MAX_NUM_LCE] instance tag for LFE elements *\/$/;"	m	struct:_ProgConfigElement_t	typeref:typename:uint8_t[3]
+length	src/aac_decoder/aac_decoder.h	/^    uint8_t length[8];  \/\/ [MAX_TNS_FILTERS]$/;"	m	struct:_TNSInfo_t	typeref:typename:uint8_t[8]
+linBits	src/mp3_decoder/mp3_decoder.h	/^    int linBits;$/;"	m	struct:HuffTabLookup	typeref:typename:int
+lo32	src/aac_decoder/aac_decoder.h	/^        uint32_t lo32;$/;"	m	struct:_U64::__anon82e632d50408	typeref:typename:uint32_t
+log2Tab	src/aac_decoder/aac_decoder.cpp	/^const uint32_t log2Tab[65] PROGMEM = {$/;"	v	typeref:typename:const uint32_t[65]PROGMEM
+loop	src/Audio.cpp	/^void Audio::loop() {$/;"	f	class:Audio	typeref:typename:void
+loopLinbits	src/mp3_decoder/mp3_decoder.h	/^    loopLinbits,$/;"	e	enum:HuffTabType
+loopNoLinbits	src/mp3_decoder/mp3_decoder.h	/^    loopNoLinbits,$/;"	e	enum:HuffTabType
+m_AACDecInfo	src/aac_decoder/aac_decoder.cpp	/^AACDecInfo_t *m_AACDecInfo;$/;"	v	typeref:typename:AACDecInfo_t *
+m_AACFrameInfo	src/aac_decoder/aac_decoder.cpp	/^AACFrameInfo_t m_AACFrameInfo;$/;"	v	typeref:typename:AACFrameInfo_t
+m_BCLK	src/Audio.h	/^    uint8_t         m_BCLK=0;                       \/\/ Bit Clock$/;"	m	class:Audio	typeref:typename:uint8_t
+m_BLOCK_SIZE	src/mp3_decoder/mp3_decoder.h	/^static const uint8_t  m_BLOCK_SIZE             =18;$/;"	v	typeref:typename:const uint8_t
+m_COS0_0	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS0_0 = 0x4013c251;  \/* Q31 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS0_1	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS0_1 = 0x40b345bd;  \/* Q31 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS0_10	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS0_10= 0x7c7d1db3;  \/* Q31 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS0_11	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS0_11= 0x4ad81a97;  \/* Q30 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS0_12	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS0_12= 0x5efc8d96;  \/* Q30 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS0_13	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS0_13= 0x41d95790;  \/* Q29 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS0_14	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS0_14= 0x6d0b20cf;  \/* Q29 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS0_15	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS0_15= 0x518522fb;  \/* Q27 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS0_2	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS0_2 = 0x41fa2d6d;  \/* Q31 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS0_3	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS0_3 = 0x43f93421;  \/* Q31 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS0_4	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS0_4 = 0x46cc1bc4;  \/* Q31 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS0_5	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS0_5 = 0x4a9d9cf0;  \/* Q31 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS0_6	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS0_6 = 0x4fae3711;  \/* Q31 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS0_7	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS0_7 = 0x56601ea7;  \/* Q31 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS0_8	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS0_8 = 0x5f4cf6eb;  \/* Q31 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS0_9	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS0_9 = 0x6b6fcf26;  \/* Q31 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS1_0	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS1_0 = 0x404f4672;  \/* Q31 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS1_1	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS1_1 = 0x42e13c10;  \/* Q31 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS1_2	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS1_2 = 0x48919f44;  \/* Q31 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS1_3	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS1_3 = 0x52cb0e63;  \/* Q31 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS1_4	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS1_4 = 0x64e2402e;  \/* Q31 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS1_5	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS1_5 = 0x43e224a9;  \/* Q30 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS1_6	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS1_6 = 0x6e3c92c1;  \/* Q30 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS1_7	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS1_7 = 0x519e4e04;  \/* Q28 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS2_0	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS2_0 = 0x4140fb46;  \/* Q31 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS2_1	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS2_1 = 0x4cf8de88;  \/* Q31 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS2_2	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS2_2 = 0x73326bbf;  \/* Q31 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS2_3	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS2_3 = 0x52036742;  \/* Q29 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS3_0	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS3_0 = 0x4545e9ef;  \/* Q31 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS3_1	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS3_1 = 0x539eba45;  \/* Q30 *\/$/;"	v	typeref:typename:const uint32_t
+m_COS4_0	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_COS4_0 = 0x5a82799a;  \/* Q31 *\/$/;"	v	typeref:typename:const uint32_t
+m_CSHIFT	src/mp3_decoder/mp3_decoder.cpp	/^const uint8_t  m_CSHIFT                 =12;  \/\/ coefficients have 12 leading sign bits for ea/;"	v	typeref:typename:const uint8_t
+m_CriticalBandInfo	src/mp3_decoder/mp3_decoder.cpp	/^CriticalBandInfo_t m_CriticalBandInfo[m_MAX_NCHAN];  \/* filled in dequantizer, used in joint st/;"	v	typeref:typename:CriticalBandInfo_t[]
+m_DIN	src/Audio.h	/^    int8_t          m_DIN=0;                        \/\/ Data In, can be negative if unused (I2S/;"	m	class:Audio	typeref:typename:int8_t
+m_DOUT	src/Audio.h	/^    uint8_t         m_DOUT=0;                       \/\/ Data Out$/;"	m	class:Audio	typeref:typename:uint8_t
+m_DQ_FRACBITS_OUT	src/mp3_decoder/mp3_decoder.cpp	/^const uint8_t  m_DQ_FRACBITS_OUT        =25;  \/\/ number of fraction bits in output of dequant$/;"	v	typeref:typename:const uint8_t
+m_DequantInfo	src/mp3_decoder/mp3_decoder.cpp	/^DequantInfo_t *m_DequantInfo;$/;"	v	typeref:typename:DequantInfo_t *
+m_FrameHeader	src/mp3_decoder/mp3_decoder.cpp	/^FrameHeader_t *m_FrameHeader;$/;"	v	typeref:typename:FrameHeader_t *
+m_HUFF_OFFSET_01	src/mp3_decoder/mp3_decoder.h	/^const uint16_t m_HUFF_OFFSET_01=  0;$/;"	v	typeref:typename:const uint16_t
+m_HUFF_OFFSET_02	src/mp3_decoder/mp3_decoder.h	/^const uint16_t m_HUFF_OFFSET_02=  9 + m_HUFF_OFFSET_01;$/;"	v	typeref:typename:const uint16_t
+m_HUFF_OFFSET_03	src/mp3_decoder/mp3_decoder.h	/^const uint16_t m_HUFF_OFFSET_03= 65 + m_HUFF_OFFSET_02;$/;"	v	typeref:typename:const uint16_t
+m_HUFF_OFFSET_05	src/mp3_decoder/mp3_decoder.h	/^const uint16_t m_HUFF_OFFSET_05= 65 + m_HUFF_OFFSET_03;$/;"	v	typeref:typename:const uint16_t
+m_HUFF_OFFSET_06	src/mp3_decoder/mp3_decoder.h	/^const uint16_t m_HUFF_OFFSET_06=257 + m_HUFF_OFFSET_05;$/;"	v	typeref:typename:const uint16_t
+m_HUFF_OFFSET_07	src/mp3_decoder/mp3_decoder.h	/^const uint16_t m_HUFF_OFFSET_07=129 + m_HUFF_OFFSET_06;$/;"	v	typeref:typename:const uint16_t
+m_HUFF_OFFSET_08	src/mp3_decoder/mp3_decoder.h	/^const uint16_t m_HUFF_OFFSET_08=110 + m_HUFF_OFFSET_07;$/;"	v	typeref:typename:const uint16_t
+m_HUFF_OFFSET_09	src/mp3_decoder/mp3_decoder.h	/^const uint16_t m_HUFF_OFFSET_09=280 + m_HUFF_OFFSET_08;$/;"	v	typeref:typename:const uint16_t
+m_HUFF_OFFSET_10	src/mp3_decoder/mp3_decoder.h	/^const uint16_t m_HUFF_OFFSET_10= 93 + m_HUFF_OFFSET_09;$/;"	v	typeref:typename:const uint16_t
+m_HUFF_OFFSET_11	src/mp3_decoder/mp3_decoder.h	/^const uint16_t m_HUFF_OFFSET_11=320 + m_HUFF_OFFSET_10;$/;"	v	typeref:typename:const uint16_t
+m_HUFF_OFFSET_12	src/mp3_decoder/mp3_decoder.h	/^const uint16_t m_HUFF_OFFSET_12=296 + m_HUFF_OFFSET_11;$/;"	v	typeref:typename:const uint16_t
+m_HUFF_OFFSET_13	src/mp3_decoder/mp3_decoder.h	/^const uint16_t m_HUFF_OFFSET_13=185 + m_HUFF_OFFSET_12;$/;"	v	typeref:typename:const uint16_t
+m_HUFF_OFFSET_15	src/mp3_decoder/mp3_decoder.h	/^const uint16_t m_HUFF_OFFSET_15=497 + m_HUFF_OFFSET_13;$/;"	v	typeref:typename:const uint16_t
+m_HUFF_OFFSET_16	src/mp3_decoder/mp3_decoder.h	/^const uint16_t m_HUFF_OFFSET_16=580 + m_HUFF_OFFSET_15;$/;"	v	typeref:typename:const uint16_t
+m_HUFF_OFFSET_24	src/mp3_decoder/mp3_decoder.h	/^const uint16_t m_HUFF_OFFSET_24=651 + m_HUFF_OFFSET_16;$/;"	v	typeref:typename:const uint16_t
+m_HUFF_PAIRTABS	src/mp3_decoder/mp3_decoder.h	/^static const uint8_t  m_HUFF_PAIRTABS          =32;$/;"	v	typeref:typename:const uint8_t
+m_HuffmanInfo	src/mp3_decoder/mp3_decoder.cpp	/^HuffmanInfo_t *m_HuffmanInfo;$/;"	v	typeref:typename:HuffmanInfo_t *
+m_IMDCTInfo	src/mp3_decoder/mp3_decoder.cpp	/^IMDCTInfo_t *m_IMDCTInfo;$/;"	v	typeref:typename:IMDCTInfo_t *
+m_IMDCT_SCALE	src/mp3_decoder/mp3_decoder.cpp	/^const uint8_t  m_IMDCT_SCALE            =2;   \/\/ additional scaling (by sqrt(2)) for fast IMDC/;"	v	typeref:typename:const uint8_t
+m_LFcount	src/Audio.h	/^    int             m_LFcount;                      \/\/ Detection of end of header$/;"	m	class:Audio	typeref:typename:int
+m_LRC	src/Audio.h	/^    uint8_t         m_LRC=0;                        \/\/ Left\/Right Clock$/;"	m	class:Audio	typeref:typename:uint8_t
+m_MAINBUF_SIZE	src/mp3_decoder/mp3_decoder.h	/^static const uint16_t m_MAINBUF_SIZE           =1940;$/;"	v	typeref:typename:const uint16_t
+m_MAX_NCHAN	src/mp3_decoder/mp3_decoder.h	/^static const uint8_t  m_MAX_NCHAN              =2;     \/\/ max channels$/;"	v	typeref:typename:const uint8_t
+m_MAX_NGRAN	src/mp3_decoder/mp3_decoder.h	/^static const uint8_t  m_MAX_NGRAN              =2;     \/\/ max granules$/;"	v	typeref:typename:const uint8_t
+m_MAX_NSAMP	src/mp3_decoder/mp3_decoder.h	/^static const uint16_t m_MAX_NSAMP              =576;   \/\/ max samples per channel, per granule$/;"	v	typeref:typename:const uint16_t
+m_MAX_REORDER_SAMPS	src/mp3_decoder/mp3_decoder.h	/^static const uint8_t  m_MAX_REORDER_SAMPS      =(192-126)*3;      \/\/ largest critical band for/;"	v	typeref:typename:const uint8_t
+m_MAX_SCFBD	src/mp3_decoder/mp3_decoder.h	/^static const uint8_t  m_MAX_SCFBD              =4;     \/\/ max scalefactor bands per channel$/;"	v	typeref:typename:const uint8_t
+m_MP3DecInfo	src/mp3_decoder/mp3_decoder.cpp	/^MP3DecInfo_t *m_MP3DecInfo;$/;"	v	typeref:typename:MP3DecInfo_t *
+m_MP3FrameInfo	src/mp3_decoder/mp3_decoder.cpp	/^MP3FrameInfo_t *m_MP3FrameInfo;$/;"	v	typeref:typename:MP3FrameInfo_t *
+m_MPEGVersion	src/mp3_decoder/mp3_decoder.cpp	/^MPEGVersion_t m_MPEGVersion;  \/* version ID *\/$/;"	v	typeref:typename:MPEGVersion_t
+m_NBANDS	src/mp3_decoder/mp3_decoder.h	/^static const uint8_t  m_NBANDS                 =32;$/;"	v	typeref:typename:const uint8_t
+m_NGRANS_MPEG1	src/mp3_decoder/mp3_decoder.cpp	/^const uint8_t  m_NGRANS_MPEG1           =2;$/;"	v	typeref:typename:const uint8_t
+m_NGRANS_MPEG2	src/mp3_decoder/mp3_decoder.cpp	/^const uint8_t  m_NGRANS_MPEG2           =1;$/;"	v	typeref:typename:const uint8_t
+m_PSInfoBase	src/aac_decoder/aac_decoder.cpp	/^PSInfoBase_t *m_PSInfoBase;$/;"	v	typeref:typename:PSInfoBase_t *
+m_SFBandTable	src/mp3_decoder/mp3_decoder.cpp	/^SFBandTable_t m_SFBandTable;$/;"	v	typeref:typename:SFBandTable_t
+m_SFLenTab	src/mp3_decoder/mp3_decoder.h	/^const char m_SFLenTab[16][2] = { {0, 0}, {0, 1}, {0, 2}, {0, 3}, {3, 0}, {1, 1}, {1, 2}, {1, 3},$/;"	v	typeref:typename:const char[16][2]
+m_SIBYTES_MPEG1_MONO	src/mp3_decoder/mp3_decoder.cpp	/^const uint8_t  m_SIBYTES_MPEG1_MONO     =17;$/;"	v	typeref:typename:const uint8_t
+m_SIBYTES_MPEG1_STEREO	src/mp3_decoder/mp3_decoder.cpp	/^const uint8_t  m_SIBYTES_MPEG1_STEREO   =32;$/;"	v	typeref:typename:const uint8_t
+m_SIBYTES_MPEG2_MONO	src/mp3_decoder/mp3_decoder.cpp	/^const uint8_t  m_SIBYTES_MPEG2_MONO     =9;$/;"	v	typeref:typename:const uint8_t
+m_SIBYTES_MPEG2_STEREO	src/mp3_decoder/mp3_decoder.cpp	/^const uint8_t  m_SIBYTES_MPEG2_STEREO   =17;$/;"	v	typeref:typename:const uint8_t
+m_SQRTHALF	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_SQRTHALF               =0x5a82799a;  \/\/ sqrt(0.5) in Q31 format$/;"	v	typeref:typename:const uint32_t
+m_SYNCWORDH	src/mp3_decoder/mp3_decoder.cpp	/^const uint8_t  m_SYNCWORDH              =0xff;$/;"	v	typeref:typename:const uint8_t
+m_SYNCWORDL	src/mp3_decoder/mp3_decoder.cpp	/^const uint8_t  m_SYNCWORDL              =0xf0;$/;"	v	typeref:typename:const uint8_t
+m_ScaleFactorInfoSub	src/mp3_decoder/mp3_decoder.cpp	/^ScaleFactorInfoSub_t m_ScaleFactorInfoSub[m_MAX_NGRAN][m_MAX_NCHAN];$/;"	v	typeref:typename:ScaleFactorInfoSub_t[][]
+m_ScaleFactorJS	src/mp3_decoder/mp3_decoder.cpp	/^ScaleFactorJS_t *m_ScaleFactorJS;$/;"	v	typeref:typename:ScaleFactorJS_t *
+m_SideInfo	src/mp3_decoder/mp3_decoder.cpp	/^SideInfo_t *m_SideInfo;$/;"	v	typeref:typename:SideInfo_t *
+m_SideInfoSub	src/mp3_decoder/mp3_decoder.cpp	/^SideInfoSub_t m_SideInfoSub[m_MAX_NGRAN][m_MAX_NCHAN];$/;"	v	typeref:typename:SideInfoSub_t[][]
+m_SubbandInfo	src/mp3_decoder/mp3_decoder.cpp	/^SubbandInfo_t *m_SubbandInfo;$/;"	v	typeref:typename:SubbandInfo_t *
+m_VBUF_LENGTH	src/mp3_decoder/mp3_decoder.h	/^static const uint16_t m_VBUF_LENGTH            =17*2* m_NBANDS;    \/\/ for double-sized vbuf FI/;"	v	typeref:typename:const uint16_t
+m_aac_BitStreamInfo	src/aac_decoder/aac_decoder.cpp	/^aac_BitStreamInfo_t     m_aac_BitStreamInfo;$/;"	v	typeref:typename:aac_BitStreamInfo_t
+m_audioCurrentTime	src/Audio.h	/^    float           m_audioCurrentTime = 0;$/;"	m	class:Audio	typeref:typename:float
+m_audioFileDuration	src/Audio.h	/^    uint32_t        m_audioFileDuration = 0;$/;"	m	class:Audio	typeref:typename:uint32_t
+m_audioName	src/Audio.h	/^    char            m_audioName[256];               \/\/ the name of the file$/;"	m	class:Audio	typeref:typename:char[256]
+m_avr_bitrate	src/Audio.h	/^    uint32_t        m_avr_bitrate;                  \/\/ average bitrate, median computed by VBR$/;"	m	class:Audio	typeref:typename:uint32_t
+m_balance	src/Audio.h	/^    int8_t          m_balance = 0;                  \/\/ -16 (mute left) ... +16 (mute right)$/;"	m	class:Audio	typeref:typename:int8_t
+m_bitRate	src/Audio.h	/^    uint32_t        m_bitRate=0;                    \/\/ current bitrate given fom decoder$/;"	m	class:Audio	typeref:typename:uint32_t
+m_bitsPerSample	src/Audio.h	/^    uint8_t         m_bitsPerSample = 16;           \/\/ bitsPerSample$/;"	m	class:Audio	typeref:typename:uint8_t
+m_buffSize	src/Audio.h	/^    size_t       m_buffSize      = 0;$/;"	m	class:AudioBuffer	typeref:typename:size_t
+m_buffSizePSRAM	src/Audio.h	/^    const size_t m_buffSizePSRAM = 300000; \/\/ most webstreams limit the advance to 100...300Kb/;"	m	class:AudioBuffer	typeref:typename:const size_t
+m_buffSizeRAM	src/Audio.h	/^    const size_t m_buffSizeRAM   = 1600 * 5;$/;"	m	class:AudioBuffer	typeref:typename:const size_t
+m_buffer	src/Audio.h	/^    uint8_t*     m_buffer        = NULL;$/;"	m	class:AudioBuffer	typeref:typename:uint8_t *
+m_bytectr	src/Audio.h	/^    uint32_t        m_bytectr = 0;                  \/\/ count received data$/;"	m	class:Audio	typeref:typename:uint32_t
+m_bytesLeft	src/Audio.h	/^    int             m_bytesLeft=0;$/;"	m	class:Audio	typeref:typename:int
+m_bytesNotDecoded	src/Audio.h	/^    uint32_t        m_bytesNotDecoded = 0;          \/\/ pictures or something else that comes w/;"	m	class:Audio	typeref:typename:uint32_t
+m_channels	src/Audio.h	/^    uint8_t         m_channels=2;$/;"	m	class:Audio	typeref:typename:uint8_t
+m_chunkcount	src/Audio.h	/^    uint32_t        m_chunkcount = 0 ;              \/\/ Counter for chunked transfer$/;"	m	class:Audio	typeref:typename:uint32_t
+m_codec	src/Audio.h	/^    uint8_t         m_codec = CODEC_NONE;           \/\/$/;"	m	class:Audio	typeref:typename:uint8_t
+m_contentlength	src/Audio.h	/^    uint32_t        m_contentlength = 0;            \/\/ Stores the length if the stream comes f/;"	m	class:Audio	typeref:typename:uint32_t
+m_controlCounter	src/Audio.h	/^    int             m_controlCounter = 0;           \/\/ Status within readID3data() and readWav/;"	m	class:Audio	typeref:typename:int
+m_curSample	src/Audio.h	/^    int16_t         m_curSample;$/;"	m	class:Audio	typeref:typename:int16_t
+m_dataLength	src/Audio.h	/^    size_t       m_dataLength    = 0;$/;"	m	class:AudioBuffer	typeref:typename:size_t
+m_datamode	src/Audio.h	/^    uint16_t        m_datamode = 0;                 \/\/ Statemaschine$/;"	m	class:Audio	typeref:typename:uint16_t
+m_dcttab	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t m_dcttab[48] PROGMEM = { \/\/ faster in ROM$/;"	v	typeref:typename:const uint32_t[48]PROGMEM
+m_endPtr	src/Audio.h	/^    uint8_t*     m_endPtr        = NULL;$/;"	m	class:AudioBuffer	typeref:typename:uint8_t *
+m_f_chunked	src/Audio.h	/^    bool            m_f_chunked = false ;           \/\/ Station provides chunked transfer$/;"	m	class:Audio	typeref:typename:bool
+m_f_ctseen	src/Audio.h	/^    bool            m_f_ctseen = false;             \/\/ First line of header seen or not$/;"	m	class:Audio	typeref:typename:bool
+m_f_exthdr	src/Audio.h	/^    bool            m_f_exthdr = false;             \/\/ ID3 extended header$/;"	m	class:Audio	typeref:typename:bool
+m_f_firstmetabyte	src/Audio.h	/^    bool            m_f_firstmetabyte = false;      \/\/ True if first metabyte (counter)$/;"	m	class:Audio	typeref:typename:bool
+m_f_firststream_ready	src/Audio.h	/^    bool            m_f_firststream_ready = false;  \/\/ Set after connecttohost and first strea/;"	m	class:Audio	typeref:typename:bool
+m_f_forceMono	src/Audio.h	/^    bool            m_f_forceMono = false;          \/\/ if true stereo -> mono$/;"	m	class:Audio	typeref:typename:bool
+m_f_localfile	src/Audio.h	/^    bool            m_f_localfile = false ;         \/\/ Play from local mp3-file$/;"	m	class:Audio	typeref:typename:bool
+m_f_loop	src/Audio.h	/^    bool            m_f_loop = false;               \/\/ Set if audio file should loop$/;"	m	class:Audio	typeref:typename:bool
+m_f_playing	src/Audio.h	/^    bool            m_f_playing = false;            \/\/ valid mp3 stream recognized$/;"	m	class:Audio	typeref:typename:bool
+m_f_psram	src/Audio.h	/^    bool            m_f_psram = false;              \/\/ set if PSRAM is availabe$/;"	m	class:Audio	typeref:typename:bool
+m_f_running	src/Audio.h	/^    bool            m_f_running = false;$/;"	m	class:Audio	typeref:typename:bool
+m_f_ssl	src/Audio.h	/^    bool            m_f_ssl = false;$/;"	m	class:Audio	typeref:typename:bool
+m_f_start	src/Audio.h	/^    bool         m_f_start       = true;$/;"	m	class:AudioBuffer	typeref:typename:bool
+m_f_stream	src/Audio.h	/^    bool            m_f_stream = false;             \/\/ Set false if stream is lost$/;"	m	class:Audio	typeref:typename:bool
+m_f_swm	src/Audio.h	/^    bool            m_f_swm = false;$/;"	m	class:Audio	typeref:typename:bool
+m_f_unsync	src/Audio.h	/^    bool            m_f_unsync = false;             \/\/ set within ID3 tag but not used$/;"	m	class:Audio	typeref:typename:bool
+m_f_webfile	src/Audio.h	/^    bool            m_f_webfile= false;             \/\/ assume it's a radiostream, not a podcas/;"	m	class:Audio	typeref:typename:bool
+m_f_webstream	src/Audio.h	/^    bool            m_f_webstream = false ;         \/\/ Play from URL$/;"	m	class:Audio	typeref:typename:bool
+m_fhADIF	src/aac_decoder/aac_decoder.cpp	/^ADIFHeader_t            m_fhADIF;$/;"	v	typeref:typename:ADIFHeader_t
+m_fhADTS	src/aac_decoder/aac_decoder.cpp	/^ADTSHeader_t            m_fhADTS;$/;"	v	typeref:typename:ADTSHeader_t
+m_file_size	src/Audio.h	/^    size_t          m_file_size = 0;                \/\/ size of the file$/;"	m	class:Audio	typeref:typename:size_t
+m_fillBuf	src/aac_decoder/aac_decoder.cpp	/^uint8_t m_fillBuf[269]; \/\/ [FILL_BUF_SIZE]$/;"	v	typeref:typename:uint8_t[269]
+m_fillCount	src/aac_decoder/aac_decoder.cpp	/^uint16_t m_fillCount = 0;$/;"	v	typeref:typename:uint16_t
+m_filter	src/Audio.h	/^    filter_t        m_filter[2];$/;"	m	class:Audio	typeref:typename:filter_t[2]
+m_filterBuff	src/Audio.h	/^    float           m_filterBuff[2][2][2];          \/\/ IIR filters memory for Audio DSP$/;"	m	class:Audio	typeref:typename:float[2][2][2]
+m_filterFrequency	src/Audio.h	/^    uint16_t        m_filterFrequency[2];$/;"	m	class:Audio	typeref:typename:uint16_t[2]
+m_filterType	src/Audio.h	/^    uint8_t         m_filterType[2];                \/\/ lowpass, highpass$/;"	m	class:Audio	typeref:typename:uint8_t[2]
+m_freeSpace	src/Audio.h	/^    size_t       m_freeSpace     = 0;$/;"	m	class:AudioBuffer	typeref:typename:size_t
+m_i2s_bytesWritten	src/Audio.h	/^    size_t          m_i2s_bytesWritten = 0;         \/\/ set in i2s_write() but not used$/;"	m	class:Audio	typeref:typename:size_t
+m_i2s_config	src/Audio.h	/^    i2s_config_t      m_i2s_config; \/\/ stores values for I2S driver$/;"	m	class:Audio	typeref:typename:i2s_config_t
+m_i2s_num	src/Audio.h	/^    uint8_t         m_i2s_num = I2S_NUM_0;          \/\/ I2S_NUM_0 or I2S_NUM_1$/;"	m	class:Audio	typeref:typename:uint8_t
+m_id3Size	src/Audio.h	/^    int             m_id3Size=0;                    \/\/ length id3 tag$/;"	m	class:Audio	typeref:typename:int
+m_lastHost	src/Audio.h	/^    char            m_lastHost[256];                \/\/ Store the last URL to a webstream$/;"	m	class:Audio	typeref:typename:char[256]
+m_loop_point	src/Audio.h	/^    size_t          m_loop_point = 0;               \/\/ Point in the file where the audio data /;"	m	class:Audio	typeref:typename:size_t
+m_metaCount	src/Audio.h	/^    uint32_t        m_metaCount = 0;                \/\/ Bytecounter between metadata$/;"	m	class:Audio	typeref:typename:uint32_t
+m_metaint	src/Audio.h	/^    uint32_t        m_metaint = 0;                  \/\/ Number of databytes between metadata$/;"	m	class:Audio	typeref:typename:uint32_t
+m_metalen	src/Audio.h	/^    int             m_metalen=0;                    \/\/ Number of bytes in metadata$/;"	m	class:Audio	typeref:typename:int
+m_outBuff	src/Audio.h	/^    int16_t         m_outBuff[2048*2];              \/\/ [1152 * 2];          \/\/ Interleaved L/;"	m	class:Audio	typeref:typename:int16_t[]
+m_pce	src/aac_decoder/aac_decoder.cpp	/^ProgConfigElement_t     *m_pce[16];$/;"	v	typeref:typename:ProgConfigElement_t * [16]
+m_playlistFormat	src/Audio.h	/^    uint8_t         m_playlistFormat = 0;           \/\/ M3U, PLS, ASX$/;"	m	class:Audio	typeref:typename:uint8_t
+m_plsURL	src/Audio.h	/^    char            m_plsURL[256];                  \/\/ URL found in playlist$/;"	m	class:Audio	typeref:typename:char[256]
+m_pulseInfo	src/aac_decoder/aac_decoder.cpp	/^PulseInfo_t             m_pulseInfo[2]; \/\/ [MAX_NCHANS_ELEM]$/;"	v	typeref:typename:PulseInfo_t[2]
+m_readPtr	src/Audio.h	/^    uint8_t*     m_readPtr       = NULL;$/;"	m	class:AudioBuffer	typeref:typename:uint8_t *
+m_readbytes	src/Audio.h	/^    int             m_readbytes=0;                  \/\/ bytes read$/;"	m	class:Audio	typeref:typename:int
+m_resBuffSize	src/Audio.h	/^    size_t       m_resBuffSize   = 1600; \/\/ reserved buffspace, >= one mp3 frame$/;"	m	class:AudioBuffer	typeref:typename:size_t
+m_rev	src/Audio.h	/^    uint8_t         m_rev=0;                        \/\/ revision, ID3 version$/;"	m	class:Audio	typeref:typename:uint8_t
+m_sMode	src/mp3_decoder/mp3_decoder.cpp	/^StereoMode_t m_sMode;  \/* mono\/stereo mode *\/$/;"	v	typeref:typename:StereoMode_t
+m_sampleRate	src/Audio.h	/^    uint32_t        m_sampleRate=16000;$/;"	m	class:Audio	typeref:typename:uint32_t
+m_st_remember	src/Audio.h	/^    uint16_t        m_st_remember = 0;              \/\/ Save hash from the last streamtitle$/;"	m	class:Audio	typeref:typename:uint16_t
+m_t0	src/Audio.h	/^    uint32_t        m_t0;                           \/\/ store millis(), is needed for a small d/;"	m	class:Audio	typeref:typename:uint32_t
+m_totalcount	src/Audio.h	/^    uint32_t        m_totalcount = 0;               \/\/ Counter mp3 data$/;"	m	class:Audio	typeref:typename:uint32_t
+m_validSamples	src/Audio.h	/^    int16_t         m_validSamples = 0;$/;"	m	class:Audio	typeref:typename:int16_t
+m_vol	src/Audio.h	/^    uint8_t         m_vol=64;                       \/\/ volume$/;"	m	class:Audio	typeref:typename:uint8_t
+m_writePtr	src/Audio.h	/^    uint8_t*     m_writePtr      = NULL;$/;"	m	class:AudioBuffer	typeref:typename:uint8_t *
+m_writeSpace	src/Audio.h	/^    size_t       m_writeSpace    = 0;$/;"	m	class:AudioBuffer	typeref:typename:size_t
+mainBuf	src/mp3_decoder/mp3_decoder.h	/^    unsigned char mainBuf[m_MAINBUF_SIZE];$/;"	m	struct:MP3DecInfo	typeref:typename:unsigned char[]
+mainDataBegin	src/mp3_decoder/mp3_decoder.h	/^    int mainDataBegin;$/;"	m	struct:MP3DecInfo	typeref:typename:int
+mainDataBegin	src/mp3_decoder/mp3_decoder.h	/^    int mainDataBegin;$/;"	m	struct:SideInfo	typeref:typename:int
+mainDataBytes	src/mp3_decoder/mp3_decoder.h	/^    int mainDataBytes;$/;"	m	struct:MP3DecInfo	typeref:typename:int
+maintainer	library.properties	/^maintainer=schreibfaul1$/;"	k
+matrixMixdown	src/aac_decoder/aac_decoder.h	/^    uint8_t matrixMixdown; \/* bit 4 = present flag, bit 3 = unused,bits 2-1 = index, bit 0 = ps/;"	m	struct:_ProgConfigElement_t	typeref:typename:uint8_t
+maxBand	src/aac_decoder/aac_decoder.h	/^    uint8_t maxBand;$/;"	m	struct:_GainControlInfo_t	typeref:typename:uint8_t
+maxBits	src/aac_decoder/aac_decoder.h	/^    int maxBits;              \/* number of bits in longest codeword *\/$/;"	m	struct:_HuffInfo_t	typeref:typename:int
+maxSFB	src/aac_decoder/aac_decoder.h	/^    uint8_t maxSFB;$/;"	m	struct:_ICSInfo_t	typeref:typename:uint8_t
+mixedBlock	src/mp3_decoder/mp3_decoder.h	/^    int mixedBlock;         \/* 0 = regular block (all short or long), 1 = mixed block *\/$/;"	m	struct:SideInfoSub	typeref:typename:int
+modeExt	src/mp3_decoder/mp3_decoder.h	/^    int modeExt;            \/* used to decipher joint stereo mode *\/$/;"	m	struct:FrameHeader	typeref:typename:int
+monoMixdown	src/aac_decoder/aac_decoder.h	/^    uint8_t monoMixdown;   \/* mono mixdown: bit 4 = present flag, bits 3-0 = element number *\/$/;"	m	struct:_ProgConfigElement_t	typeref:typename:uint8_t
+msMaskBits	src/aac_decoder/aac_decoder.h	/^    uint8_t               msMaskBits[(15 * 8 + 7) >> 3]; \/\/ [MAX_MS_MASK_BYTES]$/;"	m	struct:_PSInfoBase_t	typeref:typename:uint8_t[]
+msMaskPresent	src/aac_decoder/aac_decoder.h	/^    int                   msMaskPresent;$/;"	m	struct:_PSInfoBase_t	typeref:typename:int
+nBigvals	src/mp3_decoder/mp3_decoder.h	/^    int nBigvals;           \/* 2x this = first set of Huffman cw's (maximum amplitude can be > /;"	m	struct:SideInfoSub	typeref:typename:int
+nBlocksLong	src/mp3_decoder/mp3_decoder.h	/^    int nBlocksLong;$/;"	m	struct:BlockCount	typeref:typename:int
+nBlocksPrev	src/mp3_decoder/mp3_decoder.h	/^    int nBlocksPrev;$/;"	m	struct:BlockCount	typeref:typename:int
+nBlocksTotal	src/mp3_decoder/mp3_decoder.h	/^    int nBlocksTotal;$/;"	m	struct:BlockCount	typeref:typename:int
+nBytes	src/aac_decoder/aac_decoder.h	/^    int nBytes;$/;"	m	struct:_aac_BitStreamInfo_t	typeref:typename:int
+nBytes	src/mp3_decoder/mp3_decoder.h	/^    int nBytes;$/;"	m	struct:BitStreamInfo	typeref:typename:int
+nChans	src/aac_decoder/aac_decoder.h	/^    int                   nChans;$/;"	m	struct:_PSInfoBase_t	typeref:typename:int
+nChans	src/aac_decoder/aac_decoder.h	/^    int nChans;$/;"	m	struct:_AACDecInfo_t	typeref:typename:int
+nChans	src/aac_decoder/aac_decoder.h	/^    int nChans;$/;"	m	struct:_AACFrameInfo_t	typeref:typename:int
+nChans	src/mp3_decoder/mp3_decoder.h	/^    int nChans;$/;"	m	struct:MP3DecInfo	typeref:typename:int
+nChans	src/mp3_decoder/mp3_decoder.h	/^    int nChans;$/;"	m	struct:MP3FrameInfo	typeref:typename:int
+nGranSamps	src/mp3_decoder/mp3_decoder.h	/^    int nGranSamps;         \/* samples per granule *\/$/;"	m	struct:MP3DecInfo	typeref:typename:int
+nGrans	src/mp3_decoder/mp3_decoder.h	/^    int nGrans;             \/* granules per frame *\/$/;"	m	struct:MP3DecInfo	typeref:typename:int
+nSlots	src/mp3_decoder/mp3_decoder.h	/^    int nSlots;$/;"	m	struct:MP3DecInfo	typeref:typename:int
+name	library.properties	/^name=ESP32-audioI2S-master$/;"	k
+negMask	src/aac_decoder/aac_decoder.cpp	/^static const int8_t negMask[3] = {~0x03, ~0x07, ~0x0f};$/;"	v	typeref:typename:const int8_t[3]	file:
+nfftTab	src/aac_decoder/aac_decoder.cpp	/^const uint16_t nfftTab[2]              PROGMEM = {64, 512};$/;"	v	typeref:typename:const uint16_t[2]PROGMEM
+nfftlog2Tab	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  nfftlog2Tab[2]          PROGMEM = {6, 9};$/;"	v	typeref:typename:const uint8_t[2]PROGMEM
+nmdctTab	src/aac_decoder/aac_decoder.cpp	/^const uint16_t nmdctTab[2]             PROGMEM = {128, 1024};$/;"	v	typeref:typename:const uint16_t[2]PROGMEM
+noBits	src/mp3_decoder/mp3_decoder.h	/^    noBits,$/;"	e	enum:HuffTabType
+nonZeroBound	src/mp3_decoder/mp3_decoder.h	/^    int nonZeroBound[m_MAX_NCHAN];                \/* number of coeffs in huffDecBuf[ch] which c/;"	m	struct:HuffmanInfo	typeref:typename:int[]
+nr	src/mp3_decoder/mp3_decoder.h	/^    int nr[4];$/;"	m	struct:ScaleFactorJS	typeref:typename:int[4]
+numADE	src/aac_decoder/aac_decoder.h	/^    uint8_t numADE;        \/* number of associated data elements (max = 7) *\/$/;"	m	struct:_ProgConfigElement_t	typeref:typename:uint8_t
+numBCE	src/aac_decoder/aac_decoder.h	/^    uint8_t numBCE;        \/* number of back channel elements (max = 15) *\/$/;"	m	struct:_ProgConfigElement_t	typeref:typename:uint8_t
+numCCE	src/aac_decoder/aac_decoder.h	/^    uint8_t numCCE;        \/* number of valid channel coupling elements (max = 15) *\/$/;"	m	struct:_ProgConfigElement_t	typeref:typename:uint8_t
+numFCE	src/aac_decoder/aac_decoder.h	/^    uint8_t numFCE;        \/* number of front channel elements (max = 15) *\/$/;"	m	struct:_ProgConfigElement_t	typeref:typename:uint8_t
+numFilt	src/aac_decoder/aac_decoder.h	/^    uint8_t numFilt[8]; \/\/ [MAX_TNS_FILTERS] max 1 filter each for 8 short windows, or 3 filte/;"	m	struct:_TNSInfo_t	typeref:typename:uint8_t[8]
+numLCE	src/aac_decoder/aac_decoder.h	/^    uint8_t numLCE;        \/* number of LFE channel elements (max = 3) *\/$/;"	m	struct:_ProgConfigElement_t	typeref:typename:uint8_t
+numPCE	src/aac_decoder/aac_decoder.h	/^    uint8_t numPCE;                         \/* number of program config elements (max = 16) *\/$/;"	m	struct:_ADIFHeader_t	typeref:typename:uint8_t
+numPrevIMDCT	src/mp3_decoder/mp3_decoder.h	/^    int numPrevIMDCT[m_MAX_NCHAN];                \/* how many IMDCT's calculated in this channe/;"	m	struct:IMDCTInfo	typeref:typename:int[]
+numPulse	src/aac_decoder/aac_decoder.h	/^    uint8_t numPulse;$/;"	m	struct:_PulseInfo_t	typeref:typename:uint8_t
+numRawDataBlocks	src/aac_decoder/aac_decoder.h	/^    uint8_t numRawDataBlocks;               \/* number of raw data blocks in frame *\/$/;"	m	struct:_ADTSHeader_t	typeref:typename:uint8_t
+numSCE	src/aac_decoder/aac_decoder.h	/^    uint8_t numSCE;        \/* number of side channel elements (max = 15) *\/$/;"	m	struct:_ProgConfigElement_t	typeref:typename:uint8_t
+numWinGroup	src/aac_decoder/aac_decoder.h	/^    uint8_t numWinGroup;$/;"	m	struct:_ICSInfo_t	typeref:typename:uint8_t
+offset	src/aac_decoder/aac_decoder.h	/^    int offset;               \/* offset into symbol table *\/$/;"	m	struct:_HuffInfo_t	typeref:typename:int
+offset	src/aac_decoder/aac_decoder.h	/^    uint8_t offset[4]; \/\/ [MAX_PULSES]$/;"	m	struct:_PulseInfo_t	typeref:typename:uint8_t[4]
+oneShot	src/mp3_decoder/mp3_decoder.h	/^    oneShot,$/;"	e	enum:HuffTabType
+order	src/aac_decoder/aac_decoder.h	/^    uint8_t order[8];   \/\/ [MAX_TNS_FILTERS]$/;"	m	struct:_TNSInfo_t	typeref:typename:uint8_t[8]
+origCopy	src/aac_decoder/aac_decoder.h	/^    uint8_t origCopy;                       \/* 0 = copy, 1 = original *\/$/;"	m	struct:_ADIFHeader_t	typeref:typename:uint8_t
+origCopy	src/aac_decoder/aac_decoder.h	/^    uint8_t origCopy;                       \/* 0 = copy, 1 = original *\/$/;"	m	struct:_ADTSHeader_t	typeref:typename:uint8_t
+origFlag	src/mp3_decoder/mp3_decoder.h	/^    int origFlag;           \/* original flag: 0 = copy, 1 = original *\/$/;"	m	struct:FrameHeader	typeref:typename:int
+out	src/Audio.cpp	/^    enum: uint8_t {in = 0, out = 1};$/;"	e	enum:Audio::IIR_filterChain::__anonce26db5f0103	file:
+outBuf	src/mp3_decoder/mp3_decoder.h	/^    int outBuf[m_MAX_NCHAN][m_BLOCK_SIZE][m_NBANDS];  \/* output of IMDCT *\/$/;"	m	struct:IMDCTInfo	typeref:typename:int[][][]
+outputSamps	src/aac_decoder/aac_decoder.h	/^    int outputSamps;$/;"	m	struct:_AACFrameInfo_t	typeref:typename:int
+outputSamps	src/mp3_decoder/mp3_decoder.h	/^    int outputSamps;$/;"	m	struct:MP3FrameInfo	typeref:typename:int
+overBuf	src/mp3_decoder/mp3_decoder.h	/^    int overBuf[m_MAX_NCHAN][m_MAX_NSAMP \/ 2];      \/* overlap-add buffer (by symmetry, only n/;"	m	struct:IMDCTInfo	typeref:typename:int[][]
+overlap	src/aac_decoder/aac_decoder.h	/^    int                   overlap[2][1024];  \/\/ [AAC_MAX_NCHANS][AAC_MAX_NSAMPS]$/;"	m	struct:_PSInfoBase_t	typeref:typename:int[2][1024]
+paddingBit	src/mp3_decoder/mp3_decoder.h	/^    int paddingBit;         \/* padding flag: 0 = no padding, 1 = single pad byte *\/$/;"	m	struct:FrameHeader	typeref:typename:int
+paragraph	library.properties	/^paragraph=Plays google tts, mp3 webradio, playlists can be m3u, pls or asx. Data format can be o/;"	k
+parseAudioHeader	src/Audio.cpp	/^void Audio::parseAudioHeader(const char* ah) {$/;"	f	class:Audio	typeref:typename:void
+parseContentType	src/Audio.cpp	/^bool Audio::parseContentType(const char* ct) {$/;"	f	class:Audio	typeref:typename:bool
+parsePlaylistData	src/Audio.cpp	/^void Audio::parsePlaylistData(const char* pd){$/;"	f	class:Audio	typeref:typename:void
+part23Length	src/mp3_decoder/mp3_decoder.h	/^    int part23Length;       \/* number of bits in main data *\/$/;"	m	struct:SideInfoSub	typeref:typename:int
+part23Length	src/mp3_decoder/mp3_decoder.h	/^    int part23Length[m_MAX_NGRAN][m_MAX_NCHAN];$/;"	m	struct:MP3DecInfo	typeref:typename:int[][]
+path	src/Audio.h	/^    char            path[256];$/;"	m	class:Audio	typeref:typename:char[256]
+pauseResume	src/Audio.cpp	/^bool Audio::pauseResume() {$/;"	f	class:Audio	typeref:typename:bool
+playChunk	src/Audio.cpp	/^bool Audio::playChunk() {$/;"	f	class:Audio	typeref:typename:bool
+playI2Sremains	src/Audio.cpp	/^bool Audio::playI2Sremains() { \/\/ returns true if all dma_buffs flushed$/;"	f	class:Audio	typeref:typename:bool
+playSample	src/Audio.cpp	/^bool Audio::playSample(int16_t sample[2]) {$/;"	f	class:Audio	typeref:typename:bool
+pnsLastVal	src/aac_decoder/aac_decoder.h	/^    int                   pnsLastVal;$/;"	m	struct:_PSInfoBase_t	typeref:typename:int
+pnsUsed	src/aac_decoder/aac_decoder.h	/^    int                   pnsUsed[2]; \/\/ [MAX_NCHANS_ELEM]$/;"	m	struct:_PSInfoBase_t	typeref:typename:int[2]
+pnsUsed	src/aac_decoder/aac_decoder.h	/^    int pnsUsed;$/;"	m	struct:_AACDecInfo_t	typeref:typename:int
+pnsUsed	src/aac_decoder/aac_decoder.h	/^    int pnsUsed;$/;"	m	struct:_AACFrameInfo_t	typeref:typename:int
+poly43hi	src/aac_decoder/aac_decoder.cpp	/^static const uint32_t poly43hi[5] PROGMEM = { 0x10852163, 0xd333f6a4, 0x46e9408b, 0x27c2cef0, 0x/;"	v	typeref:typename:const uint32_t[5]PROGMEM	file:
+poly43hi	src/mp3_decoder/mp3_decoder.h	/^const unsigned int poly43hi[5] PROGMEM = { 0x10852163, 0xd333f6a4, 0x46e9408b, 0x27c2cef0, 0xfef/;"	v	typeref:typename:const unsigned int[5]PROGMEM
+poly43lo	src/aac_decoder/aac_decoder.cpp	/^static const uint32_t poly43lo[5] PROGMEM = { 0x29a0bda9, 0xb02e4828, 0x5957aa1b, 0x236c498d, 0x/;"	v	typeref:typename:const uint32_t[5]PROGMEM	file:
+poly43lo	src/mp3_decoder/mp3_decoder.h	/^const unsigned int poly43lo[5] PROGMEM = { 0x29a0bda9, 0xb02e4828, 0x5957aa1b, 0x236c498d, 0xff5/;"	v	typeref:typename:const unsigned int[5]PROGMEM
+polyCoef	src/mp3_decoder/mp3_decoder.cpp	/^const uint32_t polyCoef[264] PROGMEM = {$/;"	v	typeref:typename:const uint32_t[264]PROGMEM
+postSkip	src/aac_decoder/aac_decoder.cpp	/^const uint8_t  postSkip[2]             PROGMEM = {15, 1};$/;"	v	typeref:typename:const uint8_t[2]PROGMEM
+pow14	src/aac_decoder/aac_decoder.cpp	/^static const uint32_t pow14[4] PROGMEM = {$/;"	v	typeref:typename:const uint32_t[4]PROGMEM	file:
+pow14	src/mp3_decoder/mp3_decoder.h	/^const int pow14[4] PROGMEM = {$/;"	v	typeref:typename:const int[4]PROGMEM
+pow2exp	src/aac_decoder/aac_decoder.cpp	/^static const uint16_t pow2exp[8] PROGMEM = { 14, 13, 11, 10, 9, 7, 6, 5 };$/;"	v	typeref:typename:const uint16_t[8]PROGMEM	file:
+pow2exp	src/mp3_decoder/mp3_decoder.h	/^const int pow2exp[8] PROGMEM = { 14, 13, 11, 10, 9, 7, 6, 5 };$/;"	v	typeref:typename:const int[8]PROGMEM
+pow2frac	src/aac_decoder/aac_decoder.cpp	/^static const uint32_t pow2frac[8] PROGMEM = {$/;"	v	typeref:typename:const uint32_t[8]PROGMEM	file:
+pow2frac	src/mp3_decoder/mp3_decoder.h	/^const int pow2frac[8] PROGMEM = {$/;"	v	typeref:typename:const int[8]PROGMEM
+pow43	src/aac_decoder/aac_decoder.cpp	/^static const uint32_t pow43[48] PROGMEM = {$/;"	v	typeref:typename:const uint32_t[48]PROGMEM	file:
+pow43	src/mp3_decoder/mp3_decoder.cpp	/^const int pow43[48] PROGMEM = {$/;"	v	typeref:typename:const int[48]PROGMEM
+pow43_14	src/aac_decoder/aac_decoder.cpp	/^static const uint32_t pow43_14[4][16] PROGMEM = {$/;"	v	typeref:typename:const uint32_t[4][16]PROGMEM	file:
+pow43_14	src/mp3_decoder/mp3_decoder.cpp	/^const int pow43_14[4][16] PROGMEM = { \/* Q28 *\/$/;"	v	typeref:typename:const int[4][16]PROGMEM
+preFlag	src/mp3_decoder/mp3_decoder.h	/^    int preFlag;            \/* for optional high frequency boost *\/$/;"	m	struct:SideInfoSub	typeref:typename:int
+preTab	src/mp3_decoder/mp3_decoder.h	/^const char preTab[22] = { 0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,2,2,3,3,3,2,0 };$/;"	v	typeref:typename:const char[22]
+predSFBMax	src/aac_decoder/aac_decoder.cpp	/^const uint8_t predSFBMax[12] PROGMEM = {$/;"	v	typeref:typename:const uint8_t[12]PROGMEM
+predictionUsed	src/aac_decoder/aac_decoder.h	/^    uint8_t predictionUsed[41]; \/\/ [MAX_PRED_SFB]$/;"	m	struct:_ICSInfo_t	typeref:typename:uint8_t[41]
+predictorDataPresent	src/aac_decoder/aac_decoder.h	/^    uint8_t predictorDataPresent;$/;"	m	struct:_ICSInfo_t	typeref:typename:uint8_t
+predictorReset	src/aac_decoder/aac_decoder.h	/^    uint8_t predictorReset;$/;"	m	struct:_ICSInfo_t	typeref:typename:uint8_t
+predictorResetGroupNum	src/aac_decoder/aac_decoder.h	/^    uint8_t predictorResetGroupNum;$/;"	m	struct:_ICSInfo_t	typeref:typename:uint8_t
+prevBlockID	src/aac_decoder/aac_decoder.h	/^    int prevBlockID;    \/* block information *\/$/;"	m	struct:_AACDecInfo_t	typeref:typename:int
+prevType	src/mp3_decoder/mp3_decoder.h	/^    int prevType;$/;"	m	struct:BlockCount	typeref:typename:int
+prevType	src/mp3_decoder/mp3_decoder.h	/^    int prevType[m_MAX_NCHAN];$/;"	m	struct:IMDCTInfo	typeref:typename:int[]
+prevWinShape	src/aac_decoder/aac_decoder.h	/^    int                   prevWinShape[2]; \/\/ [AAC_MAX_NCHANS]$/;"	m	struct:_PSInfoBase_t	typeref:typename:int[2]
+prevWinSwitch	src/mp3_decoder/mp3_decoder.h	/^    int prevWinSwitch;$/;"	m	struct:BlockCount	typeref:typename:int
+prevWinSwitch	src/mp3_decoder/mp3_decoder.h	/^    int prevWinSwitch[m_MAX_NCHAN];$/;"	m	struct:IMDCTInfo	typeref:typename:int[]
+printDecodeError	src/Audio.cpp	/^void Audio::printDecodeError(int r) {$/;"	f	class:Audio	typeref:typename:void
+privateBit	src/aac_decoder/aac_decoder.h	/^    uint8_t privateBit;                     \/* ignore *\/$/;"	m	struct:_ADTSHeader_t	typeref:typename:uint8_t
+privateBit	src/mp3_decoder/mp3_decoder.h	/^    int privateBit;         \/* unused *\/$/;"	m	struct:FrameHeader	typeref:typename:int
+privateBits	src/mp3_decoder/mp3_decoder.h	/^    int privateBits;$/;"	m	struct:SideInfo	typeref:typename:int
+processControlData	src/Audio.cpp	/^void Audio::processControlData(uint8_t b) {$/;"	f	class:Audio	typeref:typename:void
+processLocalFile	src/Audio.cpp	/^void Audio::processLocalFile() {$/;"	f	class:Audio	typeref:typename:void
+processWebStream	src/Audio.cpp	/^void Audio::processWebStream() {$/;"	f	class:Audio	typeref:typename:void
+profile	src/aac_decoder/aac_decoder.h	/^    int profile;$/;"	m	struct:_AACDecInfo_t	typeref:typename:int
+profile	src/aac_decoder/aac_decoder.h	/^    int profile;$/;"	m	struct:_AACFrameInfo_t	typeref:typename:int
+profile	src/aac_decoder/aac_decoder.h	/^    uint8_t profile;                        \/* 0 = main, 1 = LC, 2 = SSR, 3 = reserved *\/$/;"	m	struct:_ADTSHeader_t	typeref:typename:uint8_t
+profile	src/aac_decoder/aac_decoder.h	/^    uint8_t profile;       \/* 0 = main, 1 = LC, 2 = SSR, 3 = reserved *\/$/;"	m	struct:_ProgConfigElement_t	typeref:typename:uint8_t
+protectBit	src/aac_decoder/aac_decoder.h	/^    uint8_t protectBit;                     \/* 0 = CRC word follows, 1 = no CRC word *\/$/;"	m	struct:_ADTSHeader_t	typeref:typename:uint8_t
+pulseDataPresent	src/aac_decoder/aac_decoder.h	/^    uint8_t pulseDataPresent;$/;"	m	struct:_PulseInfo_t	typeref:typename:uint8_t
+quadA	src/mp3_decoder/mp3_decoder.h	/^    quadA,$/;"	e	enum:HuffTabType
+quadB	src/mp3_decoder/mp3_decoder.h	/^    quadB,$/;"	e	enum:HuffTabType
+quadTabMaxBits	src/mp3_decoder/mp3_decoder.h	/^const int quadTabMaxBits[2] PROGMEM = {6, 4};$/;"	v	typeref:typename:const int[2]PROGMEM
+quadTabOffset	src/mp3_decoder/mp3_decoder.h	/^const int quadTabOffset[2] PROGMEM = {0, 64};$/;"	v	typeref:typename:const int[2]PROGMEM
+quadTable	src/mp3_decoder/mp3_decoder.cpp	/^const unsigned char quadTable[64+16] PROGMEM = {$/;"	v	typeref:typename:const unsigned char[64+16]PROGMEM
+r	src/aac_decoder/aac_decoder.h	/^    } r;$/;"	m	union:_U64	typeref:struct:_U64::__anon82e632d50408
+readID3Metadata	src/Audio.cpp	/^int Audio::readID3Metadata(uint8_t *data, size_t len) {$/;"	f	class:Audio	typeref:typename:int
+readPtr	src/Audio.cpp	/^uint8_t* AudioBuffer::readPtr() {$/;"	f	class:AudioBuffer	typeref:typename:uint8_t *
+readWaveHeader	src/Audio.cpp	/^int Audio::readWaveHeader(uint8_t* data, size_t len) {$/;"	f	class:Audio	typeref:typename:int
+region0Count	src/mp3_decoder/mp3_decoder.h	/^    int region0Count;       \/* 1+region0Count = num scale factor bands in first region of bigva/;"	m	struct:SideInfoSub	typeref:typename:int
+region1Count	src/mp3_decoder/mp3_decoder.h	/^    int region1Count;       \/* 1+region1Count = num scale factor bands in second region of bigv/;"	m	struct:SideInfoSub	typeref:typename:int
+reset	src/Audio.cpp	/^void Audio::reset() {$/;"	f	class:Audio	typeref:typename:void
+resetBuffer	src/Audio.cpp	/^void AudioBuffer::resetBuffer() {$/;"	f	class:AudioBuffer	typeref:typename:void
+s	src/mp3_decoder/mp3_decoder.h	/^    char s[13][3];         \/* [band][window] *\/$/;"	m	struct:ScaleFactorInfoSub	typeref:typename:char[13][3]
+s	src/mp3_decoder/mp3_decoder.h	/^    int\/*short*\/ s[14];$/;"	m	struct:SFBandTable	typeref:typename:int[14]
+sampRate	src/aac_decoder/aac_decoder.h	/^    int sampRate;$/;"	m	struct:_AACDecInfo_t	typeref:typename:int
+sampRateCore	src/aac_decoder/aac_decoder.h	/^    int sampRateCore;$/;"	m	struct:_AACFrameInfo_t	typeref:typename:int
+sampRateIdx	src/aac_decoder/aac_decoder.h	/^    int                   sampRateIdx;$/;"	m	struct:_PSInfoBase_t	typeref:typename:int
+sampRateIdx	src/aac_decoder/aac_decoder.h	/^    uint8_t sampRateIdx;                    \/* sample rate index range = [0, 11] *\/$/;"	m	struct:_ADTSHeader_t	typeref:typename:uint8_t
+sampRateIdx	src/aac_decoder/aac_decoder.h	/^    uint8_t sampRateIdx;   \/* sample rate index range = [0, 11] *\/$/;"	m	struct:_ProgConfigElement_t	typeref:typename:uint8_t
+sampRateOut	src/aac_decoder/aac_decoder.h	/^    int sampRateOut;$/;"	m	struct:_AACFrameInfo_t	typeref:typename:int
+sampRateTab	src/aac_decoder/aac_decoder.cpp	/^const uint32_t sampRateTab[12] PROGMEM = {$/;"	v	typeref:typename:const uint32_t[12]PROGMEM
+samplerateTab	src/mp3_decoder/mp3_decoder.h	/^const int samplerateTab[3][3] PROGMEM = {$/;"	v	typeref:typename:const int[3][3]PROGMEM
+samplesPerFrameTab	src/mp3_decoder/mp3_decoder.h	/^const int\/*short*\/samplesPerFrameTab[3][3] PROGMEM = { { 384, 1152, 1152 }, \/* MPEG1 *\/$/;"	v	typeref:typename:const int[3][3]PROGMEM
+samprate	src/mp3_decoder/mp3_decoder.h	/^    int samprate;$/;"	m	struct:MP3DecInfo	typeref:typename:int
+samprate	src/mp3_decoder/mp3_decoder.h	/^    int samprate;$/;"	m	struct:MP3FrameInfo	typeref:typename:int
+sbDeinterleaveReqd	src/aac_decoder/aac_decoder.h	/^    int sbDeinterleaveReqd[2]; \/\/ [MAX_NCHANS_ELEM]$/;"	m	struct:_AACDecInfo_t	typeref:typename:int[2]
+sbrEnabled	src/aac_decoder/aac_decoder.h	/^    int sbrEnabled;$/;"	m	struct:_AACDecInfo_t	typeref:typename:int
+scaleFactors	src/aac_decoder/aac_decoder.h	/^    short                 scaleFactors[2][15*8]; \/\/ [MAX_NCHANS_ELEM][MAX_SF_BANDS]$/;"	m	struct:_PSInfoBase_t	typeref:typename:short[2][]
+sce	src/aac_decoder/aac_decoder.h	/^    uint8_t sce[15];       \/* [MAX_NUM_SCE] side element channel pair: bit 4 = SCE\/CPE flag, b/;"	m	struct:_ProgConfigElement_t	typeref:typename:uint8_t[15]
+scfsi	src/mp3_decoder/mp3_decoder.h	/^    int scfsi[m_MAX_NCHAN][m_MAX_SCFBD];                \/* 4 scalefactor bands per channel *\/$/;"	m	struct:SideInfo	typeref:typename:int[][]
+sendBytes	src/Audio.cpp	/^int Audio::sendBytes(uint8_t* data, size_t len) {$/;"	f	class:Audio	typeref:typename:int
+sentence	library.properties	/^sentence=With this library You can easily build a WebRadio with a ESP32 board and a I2S-module.$/;"	k
+setBalance	src/Audio.cpp	/^void Audio::setBalance(int8_t bal){ \/\/ bal -16...16$/;"	f	class:Audio	typeref:typename:void
+setBitsPerSample	src/Audio.cpp	/^bool Audio::setBitsPerSample(int bits) {$/;"	f	class:Audio	typeref:typename:bool
+setChannels	src/Audio.cpp	/^bool Audio::setChannels(int ch) {$/;"	f	class:Audio	typeref:typename:bool
+setDatamode	src/Audio.h	/^    inline void setDatamode(uint8_t dm){m_datamode=dm;}$/;"	f	class:Audio	typeref:typename:void
+setFileLoop	src/Audio.cpp	/^bool Audio::setFileLoop(bool input){$/;"	f	class:Audio	typeref:typename:bool
+setFilePos	src/Audio.cpp	/^bool Audio::setFilePos(uint32_t pos) {$/;"	f	class:Audio	typeref:typename:bool
+setPinout	src/Audio.cpp	/^bool Audio::setPinout(uint8_t BCLK, uint8_t LRC, uint8_t DOUT, int8_t DIN) {$/;"	f	class:Audio	typeref:typename:bool
+setSampleRate	src/Audio.cpp	/^bool Audio::setSampleRate(uint32_t sampRate) {$/;"	f	class:Audio	typeref:typename:bool
+setTone	src/Audio.cpp	/^void Audio::setTone(uint8_t l_type, uint16_t l_freq, uint8_t r_type, uint16_t r_freq){$/;"	f	class:Audio	typeref:typename:void
+setVolume	src/Audio.cpp	/^void Audio::setVolume(uint8_t vol) { \/\/ vol 22 steps, 0...21$/;"	f	class:Audio	typeref:typename:void
+sfBandTabLong	src/aac_decoder/aac_decoder.cpp	/^const uint16_t sfBandTabLong[325] PROGMEM = {$/;"	v	typeref:typename:const uint16_t[325]PROGMEM
+sfBandTabLongOffset	src/aac_decoder/aac_decoder.cpp	/^const uint16_t sfBandTabLongOffset[12] PROGMEM = {0, 0, 42, 90, 90, 140, 192, 192, 240, 240, 240/;"	v	typeref:typename:const uint16_t[12]PROGMEM
+sfBandTabShort	src/aac_decoder/aac_decoder.cpp	/^const uint16_t sfBandTabShort[76] PROGMEM = {$/;"	v	typeref:typename:const uint16_t[76]PROGMEM
+sfBandTabShortOffset	src/aac_decoder/aac_decoder.cpp	/^const uint16_t sfBandTabShortOffset[12] PROGMEM = {0, 0, 0, 13, 13, 13, 28, 28, 44, 44, 44, 60};$/;"	v	typeref:typename:const uint16_t[12]PROGMEM
+sfBandTable	src/mp3_decoder/mp3_decoder.h	/^const SFBandTable_t sfBandTable[3][3] PROGMEM = {$/;"	v	typeref:typename:const SFBandTable_t[3][3]PROGMEM
+sfBandTotalLong	src/aac_decoder/aac_decoder.cpp	/^const uint8_t \/*char*\/ sfBandTotalLong[12] PROGMEM = {$/;"	v	typeref:typename:const uint8_t[12]PROGMEM
+sfBandTotalShort	src/aac_decoder/aac_decoder.cpp	/^const uint8_t \/*char*\/ sfBandTotalShort[12] PROGMEM = {$/;"	v	typeref:typename:const uint8_t[12]PROGMEM
+sfCompress	src/mp3_decoder/mp3_decoder.h	/^    int sfCompress;         \/* unpacked to figure out number of bits in scale factors *\/$/;"	m	struct:SideInfoSub	typeref:typename:int
+sfGroup	src/aac_decoder/aac_decoder.h	/^    uint8_t sfGroup;$/;"	m	struct:_ICSInfo_t	typeref:typename:uint8_t
+sfactScale	src/mp3_decoder/mp3_decoder.h	/^    int sfactScale;         \/* scaling of the scalefactors *\/$/;"	m	struct:SideInfoSub	typeref:typename:int
+sfbCodeBook	src/aac_decoder/aac_decoder.h	/^    uint8_t               sfbCodeBook[2][15*8]; \/\/ [MAX_NCHANS_ELEM][MAX_SF_BANDS]$/;"	m	struct:_PSInfoBase_t	typeref:typename:uint8_t[2][]
+sgnMask	src/aac_decoder/aac_decoder.cpp	/^static const int8_t sgnMask[3] = {0x02,  0x04,  0x08};$/;"	v	typeref:typename:const int8_t[3]	file:
+showstreamtitle	src/Audio.cpp	/^void Audio::showstreamtitle(const char* ml) {$/;"	f	class:Audio	typeref:typename:void
+sideBytesTab	src/mp3_decoder/mp3_decoder.h	/^const int\/*short*\/sideBytesTab[3][2] PROGMEM = { { 17, 32 }, \/* MPEG-1:   mono, stereo *\/$/;"	v	typeref:typename:const int[3][2]PROGMEM
+sinWindow	src/aac_decoder/aac_decoder.cpp	/^const uint32_t sinWindow[128 + 1024] PROGMEM = {$/;"	v	typeref:typename:const uint32_t[128+1024]PROGMEM
+sinWindowOffset	src/aac_decoder/aac_decoder.cpp	/^const uint8_t sinWindowOffset[NUM_IMDCT_SIZES] PROGMEM = {0, 128};$/;"	v	typeref:typename:const uint8_t[NUM_IMDCT_SIZES]PROGMEM
+slen	src/mp3_decoder/mp3_decoder.h	/^    int slen[4];$/;"	m	struct:ScaleFactorJS	typeref:typename:int[4]
+slotTab	src/mp3_decoder/mp3_decoder.cpp	/^const int\/*short*\/slotTab[3][3][15] PROGMEM = {$/;"	v	typeref:typename:const int[3][3][15]PROGMEM
+srIdx	src/mp3_decoder/mp3_decoder.h	/^    int srIdx;              \/* sample rate index (0 - 2) *\/$/;"	m	struct:FrameHeader	typeref:typename:int
+startSFB	src/aac_decoder/aac_decoder.h	/^    uint8_t startSFB;$/;"	m	struct:_PulseInfo_t	typeref:typename:uint8_t
+startsWith	src/Audio.h	/^    bool startsWith (const char* base, const char* str) { return (strstr(base, str) - base) == 0/;"	f	class:Audio	typeref:typename:bool
+stereoMixdown	src/aac_decoder/aac_decoder.h	/^    uint8_t stereoMixdown; \/* stereo mixdown: bit 4 = present flag, bits 3-0 = element number */;"	m	struct:_ProgConfigElement_t	typeref:typename:uint8_t
+stopSong	src/Audio.cpp	/^void Audio::stopSong() {$/;"	f	class:Audio	typeref:typename:void
+streamavail	src/Audio.h	/^    inline uint32_t streamavail() {if(m_f_ssl==false) return client.available(); else return cli/;"	f	class:Audio	typeref:typename:uint32_t
+subBlockGain	src/mp3_decoder/mp3_decoder.h	/^    int subBlockGain[3];    \/* subblock gain offset, relative to global gain *\/$/;"	m	struct:SideInfoSub	typeref:typename:int[3]
+tabType	src/mp3_decoder/mp3_decoder.h	/^    int  tabType; \/*HuffTabType*\/$/;"	m	struct:HuffTabLookup	typeref:typename:int
+tableSelect	src/mp3_decoder/mp3_decoder.h	/^    int tableSelect[3];     \/* index of Huffman tables for the big values regions *\/$/;"	m	struct:SideInfoSub	typeref:typename:int[3]
+tnsDataPresent	src/aac_decoder/aac_decoder.h	/^    uint8_t tnsDataPresent;$/;"	m	struct:_TNSInfo_t	typeref:typename:uint8_t
+tnsInfo	src/aac_decoder/aac_decoder.h	/^    TNSInfo_t             tnsInfo[2]; \/\/ [MAX_NCHANS_ELEM]$/;"	m	struct:_PSInfoBase_t	typeref:typename:TNSInfo_t[2]
+tnsLPCBuf	src/aac_decoder/aac_decoder.h	/^    int                   tnsLPCBuf[20]; \/\/ [MAX_TNS_ORDER]$/;"	m	struct:_PSInfoBase_t	typeref:typename:int[20]
+tnsMaxBandsLong	src/aac_decoder/aac_decoder.cpp	/^const uint16_t tnsMaxBandsLong[2*12] PROGMEM = {$/;"	v	typeref:typename:const uint16_t[2* 12]PROGMEM
+tnsMaxBandsLongOffset	src/aac_decoder/aac_decoder.cpp	/^const uint16_t tnsMaxBandsLongOffset[3] PROGMEM = {0, 0, 12};$/;"	v	typeref:typename:const uint16_t[3]PROGMEM
+tnsMaxBandsShort	src/aac_decoder/aac_decoder.cpp	/^const uint16_t tnsMaxBandsShort[2*12] PROGMEM = {$/;"	v	typeref:typename:const uint16_t[2* 12]PROGMEM
+tnsMaxBandsShortOffset	src/aac_decoder/aac_decoder.cpp	/^const uint16_t tnsMaxBandsShortOffset[3] PROGMEM = {0, 0, 12};$/;"	v	typeref:typename:const uint16_t[3]PROGMEM
+tnsMaxOrderLong	src/aac_decoder/aac_decoder.cpp	/^const uint16_t tnsMaxOrderLong[3] PROGMEM = {20, 12, 12};$/;"	v	typeref:typename:const uint16_t[3]PROGMEM
+tnsMaxOrderShort	src/aac_decoder/aac_decoder.cpp	/^const uint16_t tnsMaxOrderShort[3] PROGMEM = {7, 7, 7};$/;"	v	typeref:typename:const uint16_t[3]PROGMEM
+tnsUsed	src/aac_decoder/aac_decoder.h	/^    int tnsUsed;$/;"	m	struct:_AACDecInfo_t	typeref:typename:int
+tnsUsed	src/aac_decoder/aac_decoder.h	/^    int tnsUsed;$/;"	m	struct:_AACFrameInfo_t	typeref:typename:int
+tnsWorkBuf	src/aac_decoder/aac_decoder.h	/^    int                   tnsWorkBuf[20]; \/\/[MAX_TNS_ORDER]$/;"	m	struct:_PSInfoBase_t	typeref:typename:int[20]
+twidTabEven	src/aac_decoder/aac_decoder.cpp	/^const uint32_t twidTabEven[4*6 + 16*6 + 64*6] PROGMEM = {$/;"	v	typeref:typename:const uint32_t[4* 6+16* 6+64* 6]PROGMEM
+twidTabOdd	src/aac_decoder/aac_decoder.cpp	/^const uint32_t twidTabOdd[8*6 + 32*6 + 128*6] PROGMEM = {$/;"	v	typeref:typename:const uint32_t[8* 6+32* 6+128* 6]PROGMEM
+twidTabOdd32	src/aac_decoder/aac_decoder.cpp	/^static const uint32_t twidTabOdd32[8*6] = {$/;"	v	typeref:typename:const uint32_t[]	file:
+uniqueIDTab	src/aac_decoder/aac_decoder.cpp	/^const uint8_t uniqueIDTab[8] = {0x5f, 0x4b, 0x43, 0x5f, 0x5f, 0x4a, 0x52, 0x5f};$/;"	v	typeref:typename:const uint8_t[8]
+uniqueIDTab	src/mp3_decoder/mp3_decoder.h	/^const unsigned char uniqueIDTab[8] = {0x5f, 0x4b, 0x43, 0x5f, 0x5f, 0x4a, 0x52, 0x5f};$/;"	v	typeref:typename:const unsigned char[8]
+url	library.properties	/^url=https:\/\/github.com\/schreibfaul1\/ESP32-audioI2S$/;"	k
+urlencode	src/Audio.cpp	/^String Audio::urlencode(String str) {$/;"	f	class:Audio	typeref:typename:String
+useImpChanMap	src/aac_decoder/aac_decoder.h	/^    int                   useImpChanMap;$/;"	m	struct:_PSInfoBase_t	typeref:typename:int
+vbuf	src/mp3_decoder/mp3_decoder.h	/^    int vbuf[m_MAX_NCHAN * m_VBUF_LENGTH];      \/* vbuf for fast DCT-based synthesis PQMF - dou/;"	m	struct:SubbandInfo	typeref:typename:int[]
+version	library.properties	/^version=2.0.0$/;"	k
+version	src/mp3_decoder/mp3_decoder.h	/^    int version;$/;"	m	struct:MP3FrameInfo	typeref:typename:int
+vindex	src/mp3_decoder/mp3_decoder.h	/^    int vindex;                             \/* internal index for tracking position in vbuf *\/$/;"	m	struct:SubbandInfo	typeref:typename:int
+w64	src/aac_decoder/aac_decoder.h	/^    int64_t w64;$/;"	m	union:_U64	typeref:typename:int64_t
+winGroupLen	src/aac_decoder/aac_decoder.h	/^    uint8_t winGroupLen[8];     \/\/ [MAX_WIN_GROUPS]$/;"	m	struct:_ICSInfo_t	typeref:typename:uint8_t[8]
+winSequence	src/aac_decoder/aac_decoder.h	/^    uint8_t winSequence;$/;"	m	struct:_ICSInfo_t	typeref:typename:uint8_t
+winShape	src/aac_decoder/aac_decoder.h	/^    uint8_t winShape;$/;"	m	struct:_ICSInfo_t	typeref:typename:uint8_t
+winSwitchFlag	src/mp3_decoder/mp3_decoder.h	/^    int winSwitchFlag;      \/* window switching flag *\/$/;"	m	struct:SideInfoSub	typeref:typename:int
+workBuf	src/mp3_decoder/mp3_decoder.h	/^    int workBuf[m_MAX_REORDER_SAMPS];             \/* workbuf for reordering short blocks *\/$/;"	m	struct:DequantInfo	typeref:typename:int[]
+writePtr	src/Audio.cpp	/^uint8_t* AudioBuffer::writePtr() {$/;"	f	class:AudioBuffer	typeref:typename:uint8_t *
+writeSpace	src/Audio.cpp	/^size_t AudioBuffer::writeSpace() {$/;"	f	class:AudioBuffer	typeref:typename:size_t
+xSAR64	src/mp3_decoder/mp3_decoder.h	/^inline uint64_t xSAR64(uint64_t x, int n){return x >> n;}$/;"	f	typeref:typename:uint64_t
+~Audio	src/Audio.cpp	/^Audio::~Audio() {$/;"	f	class:Audio
+~AudioBuffer	src/Audio.cpp	/^AudioBuffer::~AudioBuffer() {$/;"	f	class:AudioBuffer
