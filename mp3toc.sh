@@ -1,2 +1,2 @@
 #!/bin/bash
-xxd -i data/lorem.mp3 > lorem.h
+xxd -i data/cantina.wav > cantina.h

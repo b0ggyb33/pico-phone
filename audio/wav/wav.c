@@ -25,10 +25,11 @@
 #elif USE_AUDIO_SPDIF
 #include "pico/audio_spdif.h"
 #endif
-#define SINE_WAVE_TABLE_LEN 2048
+
+#include "cantina_data.h"
+
 #define SAMPLES_PER_BUFFER 256
 
-static int16_t sine_wave_table[SINE_WAVE_TABLE_LEN];
 
 struct audio_buffer_pool *init_audio() {
 
@@ -97,14 +98,10 @@ int main() {
 
     stdio_init_all();
 
-    for (int i = 0; i < SINE_WAVE_TABLE_LEN; i++) {
-        sine_wave_table[i] = 32767 * cosf(i * 2 * (float) (M_PI / SINE_WAVE_TABLE_LEN));
-    }
-
     struct audio_buffer_pool *ap = init_audio();
     uint32_t step = 0x200000;
     uint32_t pos = 0;
-    uint32_t pos_max = 0x10000 * SINE_WAVE_TABLE_LEN;
+    uint32_t pos_max = 0x10000 * data_cantina_wav_len;
     uint vol = 128;
     while (true) {
 #if USE_AUDIO_PWM
@@ -115,7 +112,7 @@ int main() {
             if (c == '-' && vol) vol -= 4;
             if ((c == '=' || c == '+') && vol < 255) vol += 4;
             if (c == '[' && step > 0x10000) step -= 0x10000;
-            if (c == ']' && step < (SINE_WAVE_TABLE_LEN / 16) * 0x20000) step += 0x10000;
+            if (c == ']' && step < (data_cantina_wav_len / 16) * 0x20000) step += 0x10000;
             if (c == 'q') break;
 #if USE_AUDIO_PWM
             if (c == 'c') {
@@ -136,7 +133,7 @@ int main() {
         struct audio_buffer *buffer = take_audio_buffer(ap, true);
         int16_t *samples = (int16_t *) buffer->buffer->bytes;
         for (uint i = 0; i < buffer->max_sample_count; i++) {
-            samples[i] = (vol * sine_wave_table[pos >> 16u]) >> 8u;
+            samples[i] = (vol * data_cantina_wav[pos >> 16u]) >> 8u;
             pos += step;
             if (pos >= pos_max) pos -= pos_max;
         }
