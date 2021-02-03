@@ -19,4 +19,3 @@ set(PICO_AUDIO_I2S_CLOCK_PIN_BASE 26)
 pico_sdk_init()
 
 add_subdirectory(audio)
-add_subdirectory(mp3)
