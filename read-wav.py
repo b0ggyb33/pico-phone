@@ -1,10 +1,10 @@
-from pydub import AudioSegment
+import sys
 from scipy.io import wavfile
 
-rate, data = wavfile.read("data/cantina.wav")
+rate, data = wavfile.read(sys.argv[1])
 print(rate)
 
-with open("cantina_data.h", "w") as f:
+with open("audio/wav/cantina_data.h", "w") as f:
     f.write("int16_t data_cantina_wav[] = {")
     f.write(", ".join(str(item) for item in data))
     f.write("}; int data_cantina_wav_len = " + "{};".format(len(data)))
