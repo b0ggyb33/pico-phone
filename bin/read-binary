@@ -1,4 +1,5 @@
-with open("result.bin", "rb") as f:
+#!/usr/bin/python
+with open("data/result.bin", "rb") as f:
     chars = f.read()
 values = [ord(c) for c in chars]
 with open("wav.h", "w") as f:
