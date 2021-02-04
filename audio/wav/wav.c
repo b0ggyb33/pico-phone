@@ -31,6 +31,8 @@
 #define SAMPLES_PER_BUFFER 256
 
 
+int16_t apply_volume(int16_t in);
+
 struct audio_buffer_pool *init_audio() {
 
     static audio_format_t audio_format = {
@@ -102,22 +104,27 @@ int main() {
     uint32_t step = 0x200000;
     uint32_t pos = 0;
     uint32_t pos_max = 0x10000 * data_snd_wav_len;
-    uint vol = 128;
     while (true) {
 #if USE_AUDIO_PWM
         enum audio_correction_mode m = audio_pwm_get_correction_mode();
 #endif
 
         struct audio_buffer *buffer = take_audio_buffer(ap, true);
+
         int16_t *samples = (int16_t *) buffer->buffer->bytes;
         for (uint i = 0; i < buffer->max_sample_count; i++) {
-            samples[i] = (vol * data_snd_wav[pos >> 16u]) >> 8u;
+            samples[i] = apply_volume(data_snd_wav[pos >> 16u]);
             pos += step;
             if (pos >= pos_max) pos -= pos_max;
         }
         buffer->sample_count = buffer->max_sample_count;
+
         give_audio_buffer(ap, buffer);
     }
     puts("\n");
     return 0;
+}
+
+int16_t apply_volume(int16_t in){
+  return (128 * in) >> 8u;
 }
